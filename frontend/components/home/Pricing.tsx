@@ -142,7 +142,7 @@ const Pricing = React.forwardRef<HTMLDivElement, PricingProps>(
     const pricingPlans = [
       {
         name: "Starter",
-        price: "$0",
+        price: "₹0",
         description: "Perfect for individuals and small teams",
         features: [
           { included: true, text: "Up to 5 projects" },
@@ -165,7 +165,7 @@ const Pricing = React.forwardRef<HTMLDivElement, PricingProps>(
       },
       {
         name: "Pro",
-        price: "$29",
+        price: "₹2,499",
         description: "For growing teams and advanced projects",
         features: [
           { included: true, text: "Up to 100 projects" },
@@ -188,7 +188,7 @@ const Pricing = React.forwardRef<HTMLDivElement, PricingProps>(
       },
       {
         name: "Enterprise",
-        price: "$79",
+        price: "₹6,499",
         description: "For large teams with advanced needs",
         features: [
           { included: true, text: "Unlimited projects" },

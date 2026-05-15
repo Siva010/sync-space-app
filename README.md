@@ -45,11 +45,11 @@ SyncSpace is a sophisticated project collaboration platform designed to streamli
 
 ### Subscription Tiers
 
-| Plan           | Projects  | Team Members | Storage | Price     |
-| -------------- | --------- | ------------ | ------- | --------- |
-| **Starter**    | 5         | 4            | 100MB   | Free      |
-| **Pro**        | 100       | 15           | 10GB    | $29/month |
-| **Enterprise** | Unlimited | Unlimited    | 100GB   | $79/month |
+| Plan           | Projects  | Team Members | Storage | Price         |
+| -------------- | --------- | ------------ | ------- | ------------- |
+| **Starter**    | 5         | 4            | 100MB   | Free          |
+| **Pro**        | 100       | 15           | 10GB    | ₹2,499/month  |
+| **Enterprise** | Unlimited | Unlimited    | 100GB   | ₹6,499/month  |
 
 
 ### Auto-Accept Team Invitation
