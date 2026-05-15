@@ -1,4 +1,4 @@
-# SyncSpace - Project Collaboration Platform
+# SyncSpace - Multi-User Collaboration App / Project Collaboration Platform
 
 ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)
 ![Express](https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=white)
