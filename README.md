@@ -19,9 +19,6 @@
 
 SyncSpace is a sophisticated project collaboration platform designed to streamline team workflows and enhance productivity through intuitive project management tools. This full-stack application provides teams with a centralized workspace to create, track, and complete projects with ease.
 
-🔗 **Live Demo**: [syncspace-app.vercel.app](https://syncspace-app.vercel.app/)  
- **Backend**: Express.js API with PostgreSQL database deployed on Nortflank
-
 **Accounts created with email/password require activation before login. You can sign up with Google or GitHub for instant verification.**
 
 ## Key Features
