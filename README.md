@@ -13,37 +13,7 @@
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 
 
-## Table of Contents
 
-1. [Overview](#overview)
-2. [Key Features](#key-features)
-3. [Subscription & Payment System](#subscription--payment-system)
-   - [Subscription Tiers](#subscription-tiers)
-   - [Auto-Accept Team Invitation](#auto-accept-team-invitation)
-4. [🛠️ Technology Stack](#️-technology-stack)
-   - [Frontend](#frontend)
-   - [Backend](#backend)
-   - [DevOps](#devops)
-5. [Testing](#testing)
-   - [Test Coverage](#test-coverage)
-   - [Testing Technologies](#testing-technologies)
-   - [Running Tests](#running-tests)
-   - [Test Categories](#test-categories)
-6. [Architecture](#architecture)
-7. [Subscription System Architecture](#subscription-system-architecture)
-   - [Payment Flow](#payment-flow)
-8. [Security Features](#security-features)
-   - [Authentication & Authorization](#authentication--authorization)
-   - [Data Protection](#data-protection)
-   - [Rate Limiting & DDoS Protection](#rate-limiting--ddos-protection)
-   - [Security Headers](#security-headers)
-9. [Getting Started](#getting-started)
-   - [Prerequisites](#prerequisites)
-   - [Installation](#installation)
-10. [Local Development](#local-development)
-11. [Contribution](#contribution)
-
----
 
 ## Overview
 
