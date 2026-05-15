@@ -160,9 +160,9 @@ export default function ProjectOverview({
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-              <div className="bg-violet-50 dark:bg-violet-900/20 rounded-lg p-4 flex items-center">
-                <div className="h-10 w-10 rounded-full bg-violet-100 dark:bg-violet-800/30 flex items-center justify-center mr-3">
-                  <CheckCircle2 className="h-5 w-5 text-violet-600 dark:text-violet-400" />
+              <div className="bg-cyan-50 dark:bg-cyan-900/20 rounded-lg p-4 flex items-center">
+                <div className="h-10 w-10 rounded-full bg-cyan-100 dark:bg-cyan-800/30 flex items-center justify-center mr-3">
+                  <CheckCircle2 className="h-5 w-5 text-cyan-600 dark:text-cyan-400" />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Completed</p>
@@ -226,7 +226,7 @@ export default function ProjectOverview({
                         alt={project.creator?.name || ""}
                         className="object-cover cursor-pointer"
                       />
-                      <AvatarFallback className="bg-violet-100 text-violet-700 text-xs">
+                      <AvatarFallback className="bg-cyan-100 text-cyan-700 text-xs">
                         {getInitials(project.creator?.name)}
                       </AvatarFallback>
                     </Avatar>

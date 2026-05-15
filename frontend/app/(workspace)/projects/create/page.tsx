@@ -104,7 +104,7 @@ export default function NewProjectPage() {
       <div className="flex flex-col min-h-[80vh]">
         <div className="flex-grow flex items-center justify-center">
           <div className="text-center space-y-4">
-            <Loader2 className="h-12 w-12 animate-spin text-violet-600 mx-auto" />
+            <Loader2 className="h-12 w-12 animate-spin text-cyan-600 mx-auto" />
             <p className="text-muted-foreground">Loading your account...</p>
           </div>
         </div>
@@ -128,7 +128,7 @@ export default function NewProjectPage() {
           <div className="flex items-center space-x-2">
             <Badge
               variant="outline"
-              className="px-3 py-1 border-violet-200 bg-violet-50 text-violet-700 dark:border-violet-800 dark:bg-violet-900/30 dark:text-violet-400"
+              className="px-3 py-1 border-cyan-200 bg-cyan-50 text-cyan-700 dark:border-cyan-800 dark:bg-cyan-900/30 dark:text-cyan-400"
             >
               <FolderPlus className="h-3.5 w-3.5 mr-1.5" />
               New Project
@@ -153,7 +153,7 @@ export default function NewProjectPage() {
                   htmlFor="project-name"
                   className="text-base font-medium flex items-center"
                 >
-                  <FileText className="h-4 w-4 mr-2 text-violet-600" />
+                  <FileText className="h-4 w-4 mr-2 text-cyan-600" />
                   Project Name*
                 </Label>
                 <Input
@@ -175,7 +175,7 @@ export default function NewProjectPage() {
                   htmlFor="project-description"
                   className="text-base font-medium flex items-center"
                 >
-                  <FileText className="h-4 w-4 mr-2 text-violet-600" />
+                  <FileText className="h-4 w-4 mr-2 text-cyan-600" />
                   Description
                 </Label>
                 <Textarea
@@ -197,7 +197,7 @@ export default function NewProjectPage() {
                   htmlFor="due-date"
                   className="text-base font-medium flex items-center"
                 >
-                  <Clock className="h-4 w-4 mr-2 text-violet-600" />
+                  <Clock className="h-4 w-4 mr-2 text-cyan-600" />
                   Due Date (Optional)
                 </Label>
                 <Input
@@ -218,7 +218,7 @@ export default function NewProjectPage() {
                   htmlFor="project-files"
                   className="text-base font-medium flex items-center"
                 >
-                  <Paperclip className="h-4 w-4 mr-2 text-violet-600" />
+                  <Paperclip className="h-4 w-4 mr-2 text-cyan-600" />
                   Project Files (Optional)
                 </Label>
                 <ProjectFileUpload
@@ -244,7 +244,7 @@ export default function NewProjectPage() {
                   </Button>
                   <Button
                     type="submit"
-                    className="bg-violet-600 hover:bg-violet-700 dark:bg-violet-600 dark:hover:bg-violet-700 text-white order-1 sm:order-2"
+                    className="bg-cyan-600 hover:bg-cyan-700 dark:bg-cyan-600 dark:hover:bg-cyan-700 text-white order-1 sm:order-2"
                     disabled={!projectName || isSubmitting}
                     size="lg"
                   >
@@ -286,7 +286,7 @@ export default function NewProjectPage() {
                       Due Date
                     </h3>
                     <div className="flex items-center">
-                      <Calendar className="h-4 w-4 mr-2 text-violet-600" />
+                      <Calendar className="h-4 w-4 mr-2 text-cyan-600" />
                       <span>
                         {new Date(dueDate).toLocaleDateString(undefined, {
                           year: "numeric",
@@ -303,7 +303,7 @@ export default function NewProjectPage() {
                     Team Members
                   </h3>
                   <div className="flex items-center text-sm">
-                    <Users className="h-4 w-4 mr-2 text-violet-600" />
+                    <Users className="h-4 w-4 mr-2 text-cyan-600" />
                     <span>You (Admin)</span>
                   </div>
                   <p className="text-xs text-muted-foreground mt-1">
@@ -317,7 +317,7 @@ export default function NewProjectPage() {
                       Attached Files
                     </h3>
                     <div className="flex items-center text-sm">
-                      <Paperclip className="h-4 w-4 mr-2 text-violet-600" />
+                      <Paperclip className="h-4 w-4 mr-2 text-cyan-600" />
                       <span>{projectFiles.length} file(s) attached</span>
                     </div>
                   </div>

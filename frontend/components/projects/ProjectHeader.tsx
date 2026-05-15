@@ -114,7 +114,7 @@ export default function ProjectHeader({
           {(isAdmin || isEditor) && (
             <Button
               asChild
-              className="bg-violet-700 hover:bg-violet-800 text-white flex items-center"
+              className="bg-cyan-700 hover:bg-cyan-800 text-white flex items-center"
               size="sm"
             >
               <Link href={`/tasks/create?projectId=${project.id}`}>
@@ -170,7 +170,7 @@ export default function ProjectHeader({
           {(isAdmin || isEditor) && (
             <Button
               asChild
-              className="flex-1 bg-violet-700 hover:bg-violet-800 text-white flex items-center justify-center"
+              className="flex-1 bg-cyan-700 hover:bg-cyan-800 text-white flex items-center justify-center"
               size="sm"
             >
               <Link href={`/tasks/create?projectId=${project.id}`}>

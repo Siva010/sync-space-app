@@ -130,7 +130,7 @@ export default function PendingInvitationsSection({
           <CardTitle>Pending Invitations</CardTitle>
         </CardHeader>
         <CardContent className="flex justify-center py-6">
-          <Loader2 className="h-6 w-6 animate-spin text-violet-700" />
+          <Loader2 className="h-6 w-6 animate-spin text-cyan-700" />
         </CardContent>
       </Card>
     );
@@ -144,7 +144,7 @@ export default function PendingInvitationsSection({
     <>
       <span className="flex items-center p-0 m-0 mb-4">
         Pending Invitations
-        <Badge className="ml-2 bg-violet-100 text-violet-800 dark:bg-violet-900/30 dark:text-violet-300">
+        <Badge className="ml-2 bg-cyan-100 text-cyan-800 dark:bg-cyan-900/30 dark:text-cyan-300">
           {invitations.length}
         </Badge>
       </span>
@@ -188,7 +188,7 @@ export default function PendingInvitationsSection({
                 </Button>
                 <Button
                   size="sm"
-                  className="bg-violet-700 hover:bg-violet-800 text-white"
+                  className="bg-cyan-700 hover:bg-cyan-800 text-white"
                   onClick={() => handleAccept(invitation.id)}
                   disabled={processingId === invitation.id}
                 >

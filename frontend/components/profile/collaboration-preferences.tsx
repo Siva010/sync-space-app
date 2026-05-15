@@ -131,7 +131,7 @@ export function CollaborationPreferences() {
         </CardHeader>
         <CardContent>
           <div className="h-40 flex items-center justify-center">
-            <div className="h-8 w-8 rounded-full border-4 border-violet-200 border-t-violet-600 animate-spin"></div>
+            <div className="h-8 w-8 rounded-full border-4 border-cyan-200 border-t-cyan-600 animate-spin"></div>
           </div>
         </CardContent>
       </Card>

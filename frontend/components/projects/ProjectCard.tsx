@@ -96,7 +96,7 @@ export default function ProjectCard({
                     alt={member?.user?.name!}
                     className="object-cover"
                   />
-                  <AvatarFallback className="bg-gradient-to-br from-violet-600 to-violet-800 text-white">
+                  <AvatarFallback className="bg-gradient-to-br from-cyan-600 to-cyan-800 text-white">
                     {getInitials(member.user.name)}
                   </AvatarFallback>
                 </Avatar>

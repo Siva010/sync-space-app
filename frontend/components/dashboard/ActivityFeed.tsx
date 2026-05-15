@@ -93,7 +93,7 @@ export default function ActivityFeed({ activities }: ActivityFeedProps) {
         );
       case "TASK_CREATED":
         return (
-          <FileText className="h-4 w-4 mr-2 mt-0.5 flex-shrink-0 text-violet-500 dark:text-violet-400" />
+          <FileText className="h-4 w-4 mr-2 mt-0.5 flex-shrink-0 text-cyan-500 dark:text-cyan-400" />
         );
       case "TASK_UPDATED":
         return (
@@ -109,7 +109,7 @@ export default function ActivityFeed({ activities }: ActivityFeedProps) {
         );
       default:
         return (
-          <FileText className="h-4 w-4 mr-2 mt-0.5 flex-shrink-0 text-violet-500 dark:text-violet-400" />
+          <FileText className="h-4 w-4 mr-2 mt-0.5 flex-shrink-0 text-cyan-500 dark:text-cyan-400" />
         );
     }
   };
@@ -122,7 +122,7 @@ export default function ActivityFeed({ activities }: ActivityFeedProps) {
             Created project{" "}
             <Link
               href={`/projects/${activity.projectId}`}
-              className="text-violet-700 hover:underline font-medium dark:text-violet-400"
+              className="text-cyan-700 hover:underline font-medium dark:text-cyan-400"
             >
               {activity.projectName}
             </Link>
@@ -138,7 +138,7 @@ export default function ActivityFeed({ activities }: ActivityFeedProps) {
             to project{" "}
             <Link
               href={`/projects/${activity.projectId}`}
-              className="text-violet-700 hover:underline font-medium dark:text-violet-400"
+              className="text-cyan-700 hover:underline font-medium dark:text-cyan-400"
             >
               {activity.projectName}
             </Link>
@@ -156,14 +156,14 @@ export default function ActivityFeed({ activities }: ActivityFeedProps) {
             Created task{" "}
             <Link
               href={`/tasks/${activity.entityId}`}
-              className="text-violet-700 hover:underline font-medium dark:text-violet-400"
+              className="text-cyan-700 hover:underline font-medium dark:text-cyan-400"
             >
               {activity.entityTitle}
             </Link>{" "}
             in project{" "}
             <Link
               href={`/projects/${activity.projectId}`}
-              className="text-violet-700 hover:underline font-medium dark:text-violet-400"
+              className="text-cyan-700 hover:underline font-medium dark:text-cyan-400"
             >
               {activity.projectName}
             </Link>
@@ -175,7 +175,7 @@ export default function ActivityFeed({ activities }: ActivityFeedProps) {
             Updated task{" "}
             <Link
               href={`/tasks/${activity.entityId}`}
-              className="text-violet-700 hover:underline font-medium dark:text-violet-400"
+              className="text-cyan-700 hover:underline font-medium dark:text-cyan-400"
             >
               {activity.entityTitle}
             </Link>
@@ -200,14 +200,14 @@ export default function ActivityFeed({ activities }: ActivityFeedProps) {
             Completed task{" "}
             <Link
               href={`/tasks/${activity.entityId}`}
-              className="text-violet-700 hover:underline font-medium dark:text-violet-400"
+              className="text-cyan-700 hover:underline font-medium dark:text-cyan-400"
             >
               {activity.entityTitle}
             </Link>{" "}
             in project{" "}
             <Link
               href={`/projects/${activity.projectId}`}
-              className="text-violet-700 hover:underline font-medium dark:text-violet-400"
+              className="text-cyan-700 hover:underline font-medium dark:text-cyan-400"
             >
               {activity.projectName}
             </Link>
@@ -219,7 +219,7 @@ export default function ActivityFeed({ activities }: ActivityFeedProps) {
             Updated project{" "}
             <Link
               href={`/projects/${activity.projectId}`}
-              className="text-violet-700 hover:underline font-medium dark:text-violet-400"
+              className="text-cyan-700 hover:underline font-medium dark:text-cyan-400"
             >
               {activity.projectName}
             </Link>
@@ -267,7 +267,7 @@ export default function ActivityFeed({ activities }: ActivityFeedProps) {
                       src={activity.userImage || ""}
                       alt={activity.userName || "Unknown user"}
                     />
-                    <AvatarFallback className="bg-violet-100 text-violet-700 text-xs">
+                    <AvatarFallback className="bg-cyan-100 text-cyan-700 text-xs">
                       {getInitials(activity.userName)}
                     </AvatarFallback>
                   </Avatar>

@@ -75,7 +75,7 @@ const NewMessageButton: React.FC<NewMessageButtonProps> = ({
       <DialogTrigger asChild>
         <Button
           variant="default"
-          className="w-full bg-violet-700 hover:bg-violet-800 text-white flex items-center cursor-pointer"
+          className="w-full bg-cyan-700 hover:bg-cyan-800 text-white flex items-center cursor-pointer"
         >
           <PlusCircle className="h-4 w-4 mr-2" />
           New Message

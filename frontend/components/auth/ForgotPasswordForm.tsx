@@ -56,17 +56,17 @@ export default function ForgotPasswordForm() {
       transition={{ duration: 0.4 }}
       className="w-full max-w-md mx-auto"
     >
-      <Card className="border-0 shadow-lg dark:shadow-md dark:shadow-violet-900/10">
+      <Card className="border-0 shadow-lg dark:shadow-md dark:shadow-cyan-900/10">
         <CardHeader className="space-y-1 text-center pb-0">
           <div className="relative w-full">
             <Link
               href="/"
-              className="absolute left-0 top-0 inline-flex items-center text-muted-foreground hover:text-violet-600 dark:hover:text-violet-400 transition-colors"
+              className="absolute left-0 top-0 inline-flex items-center text-muted-foreground hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"
             >
               <ArrowLeft className="h-4 w-4 mr-1" />
               <span className="text-sm font-medium">Home</span>
             </Link>
-            <div className="h-12 w-12 rounded-full bg-violet-600 dark:bg-violet-700 flex items-center justify-center mx-auto">
+            <div className="h-12 w-12 rounded-full bg-cyan-600 dark:bg-cyan-700 flex items-center justify-center mx-auto">
               <KeyRound className="h-6 w-6 text-white" />
             </div>
           </div>
@@ -114,7 +114,7 @@ export default function ForgotPasswordForm() {
               <Button
                 asChild
                 variant="default"
-                className="bg-violet-600 hover:bg-violet-700 dark:bg-violet-700 dark:hover:bg-violet-800 text-white"
+                className="bg-cyan-600 hover:bg-cyan-700 dark:bg-cyan-700 dark:hover:bg-cyan-800 text-white"
               >
                 <Link href="/auth/signin">Return to Sign In</Link>
               </Button>
@@ -126,7 +126,7 @@ export default function ForgotPasswordForm() {
                   htmlFor="email"
                   className="text-sm font-medium text-foreground flex items-center"
                 >
-                  <Mail className="h-4 w-4 mr-1.5 text-violet-500 dark:text-violet-400" />
+                  <Mail className="h-4 w-4 mr-1.5 text-cyan-500 dark:text-cyan-400" />
                   Email Address
                 </label>
                 <p className="text-sm text-muted-foreground">
@@ -147,7 +147,7 @@ export default function ForgotPasswordForm() {
               <Button
                 type="submit"
                 disabled={isLoading}
-                className="w-full bg-violet-600 hover:bg-violet-700 dark:bg-violet-700 dark:hover:bg-violet-800 text-white font-medium py-2.5"
+                className="w-full bg-cyan-600 hover:bg-cyan-700 dark:bg-cyan-700 dark:hover:bg-cyan-800 text-white font-medium py-2.5"
               >
                 {isLoading ? (
                   <>
@@ -166,7 +166,7 @@ export default function ForgotPasswordForm() {
           <Button
             asChild
             variant="link"
-            className="text-violet-600 hover:text-violet-700 dark:text-violet-400 dark:hover:text-violet-300"
+            className="text-cyan-600 hover:text-cyan-700 dark:text-cyan-400 dark:hover:text-cyan-300"
           >
             <Link href="/auth/signin" className="flex items-center">
               <ArrowLeft className="h-4 w-4 mr-1" />

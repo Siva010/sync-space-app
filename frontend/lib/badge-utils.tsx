@@ -67,7 +67,7 @@ export const getRoleBadge = (role: string) => {
   switch (role) {
     case "ADMIN":
       return (
-        <Badge className="bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300 flex items-center gap-1.5">
+        <Badge className="bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300 flex items-center gap-1.5">
           <ShieldAlert className="h-3 w-3" />
           Admin
         </Badge>

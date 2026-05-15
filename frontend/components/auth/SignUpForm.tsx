@@ -34,7 +34,7 @@ function LoadingForm() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow">
         <div className="flex items-center justify-center min-h-[calc(100vh-200px)]">
-          <Loader2 className="h-8 w-8 animate-spin text-violet-700" />
+          <Loader2 className="h-8 w-8 animate-spin text-cyan-700" />
         </div>
       </main>
     </div>
@@ -100,17 +100,17 @@ function SignUpForm() {
       transition={{ duration: 0.4 }}
       className="w-full max-w-md mx-auto"
     >
-      <Card className="border-0 shadow-lg dark:shadow-md dark:shadow-violet-900/10">
+      <Card className="border-0 shadow-lg dark:shadow-md dark:shadow-cyan-900/10">
         <CardHeader className="space-y-1 text-center pb-0">
           <div className="relative w-full">
             <Link
               href="/"
-              className="absolute left-0 top-0 inline-flex items-center text-muted-foreground hover:text-violet-600 dark:hover:text-violet-400 transition-colors"
+              className="absolute left-0 top-0 inline-flex items-center text-muted-foreground hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"
             >
               <ArrowLeft className="h-4 w-4 mr-1" />
               <span className="text-sm font-medium">Home</span>
             </Link>
-            <div className="h-12 w-12 rounded-full bg-violet-600 dark:bg-violet-700 flex items-center justify-center mx-auto">
+            <div className="h-12 w-12 rounded-full bg-cyan-600 dark:bg-cyan-700 flex items-center justify-center mx-auto">
               <KeyRound className="h-6 w-6 text-white" />
             </div>
           </div>
@@ -137,8 +137,8 @@ function SignUpForm() {
           {registrationSuccess ? (
             <div className="text-center py-6">
               <div className="flex justify-center mb-4">
-                <div className="h-16 w-16 bg-violet-100 dark:bg-violet-900/30 rounded-full flex items-center justify-center">
-                  <Mail className="h-8 w-8 text-violet-600 dark:text-violet-400" />
+                <div className="h-16 w-16 bg-cyan-100 dark:bg-cyan-900/30 rounded-full flex items-center justify-center">
+                  <Mail className="h-8 w-8 text-cyan-600 dark:text-cyan-400" />
                 </div>
               </div>
               <div className="text-2xl font-bold text-foreground mb-2">
@@ -149,8 +149,8 @@ function SignUpForm() {
                 <span className="font-medium">{registeredEmail}</span>.{" "}
                 <br></br> Click the link to activate your account.
               </p>
-              <div className="bg-violet-50 dark:bg-violet-900/20 p-4 rounded-lg text-sm mb-6">
-                <p className="text-violet-700 dark:text-violet-300">
+              <div className="bg-cyan-50 dark:bg-cyan-900/20 p-4 rounded-lg text-sm mb-6">
+                <p className="text-cyan-700 dark:text-cyan-300">
                   <AlertCircle className="inline h-4 w-4 mr-2" />
                   Verify your email before you can sign in.
                 </p>
@@ -163,7 +163,7 @@ function SignUpForm() {
                   htmlFor="name"
                   className="text-sm font-medium text-foreground flex items-center"
                 >
-                  <UserIcon className="h-4 w-4 mr-1.5 text-violet-500 dark:text-violet-400" />
+                  <UserIcon className="h-4 w-4 mr-1.5 text-cyan-500 dark:text-cyan-400" />
                   Full name
                 </label>
                 <Input
@@ -182,7 +182,7 @@ function SignUpForm() {
                   htmlFor="email"
                   className="text-sm font-medium text-foreground flex items-center"
                 >
-                  <Mail className="h-4 w-4 mr-1.5 text-violet-500 dark:text-violet-400" />
+                  <Mail className="h-4 w-4 mr-1.5 text-cyan-500 dark:text-cyan-400" />
                   Email address
                 </label>
                 <Input
@@ -201,7 +201,7 @@ function SignUpForm() {
                   htmlFor="password"
                   className="text-sm font-medium text-foreground flex items-center"
                 >
-                  <Lock className="h-4 w-4 mr-1.5 text-violet-500 dark:text-violet-400" />
+                  <Lock className="h-4 w-4 mr-1.5 text-cyan-500 dark:text-cyan-400" />
                   Password
                 </label>
                 <Input
@@ -277,7 +277,7 @@ function SignUpForm() {
               <Button
                 type="submit"
                 disabled={isLoading}
-                className="w-full bg-violet-600 hover:bg-violet-700 dark:bg-violet-700 dark:hover:bg-violet-800 text-white font-medium py-2.5"
+                className="w-full bg-cyan-600 hover:bg-cyan-700 dark:bg-cyan-700 dark:hover:bg-cyan-800 text-white font-medium py-2.5"
               >
                 {isLoading ? (
                   <>
@@ -349,7 +349,7 @@ function SignUpForm() {
             <Button
               asChild
               variant="link"
-              className="text-violet-600 hover:text-violet-700 dark:text-violet-400 dark:hover:text-violet-300 p-0"
+              className="text-cyan-600 hover:text-cyan-700 dark:text-cyan-400 dark:hover:text-cyan-300 p-0"
             >
               <Link
                 href="/auth/signin"

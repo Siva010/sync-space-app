@@ -38,16 +38,16 @@ const planInfo = {
   PRO: {
     name: 'Pro',
     icon: Crown,
-    color: 'text-violet-600 dark:text-violet-400',
-    bgColor: 'bg-violet-100 dark:bg-violet-900/30',
-    borderColor: 'border-violet-200 dark:border-violet-700',
+    color: 'text-cyan-600 dark:text-cyan-400',
+    bgColor: 'bg-cyan-100 dark:bg-cyan-900/30',
+    borderColor: 'border-cyan-200 dark:border-cyan-700',
   },
   ENTERPRISE: {
     name: 'Enterprise',
     icon: Crown,
-    color: 'text-purple-600 dark:text-purple-400',
-    bgColor: 'bg-purple-100 dark:bg-purple-900/30',
-    borderColor: 'border-purple-200 dark:border-purple-700',
+    color: 'text-blue-600 dark:text-blue-400',
+    bgColor: 'bg-blue-100 dark:bg-blue-900/30',
+    borderColor: 'border-blue-200 dark:border-blue-700',
   },
 };
 
@@ -429,10 +429,10 @@ export default function SubscriptionPage() {
                       <CardContent className="p-4 sm:p-4 flex flex-col flex-1">
                         <div className="flex items-center justify-between mb-4 sm:mb-3">
                           <div className="flex items-center gap-3">
-                            <Crown className="h-5 w-5 sm:h-5 sm:w-5 text-violet-600" />
+                            <Crown className="h-5 w-5 sm:h-5 sm:w-5 text-cyan-600" />
                             <h3 className="font-semibold text-base sm:text-base">Pro Plan</h3>
                           </div>
-                          <Badge variant="outline" className="text-violet-600 text-sm sm:text-sm px-3 py-1">
+                          <Badge variant="outline" className="text-cyan-600 text-sm sm:text-sm px-3 py-1">
                             $29/month
                           </Badge>
                         </div>
@@ -448,7 +448,7 @@ export default function SubscriptionPage() {
                             size="default"
                             className={`w-full text-base sm:text-sm px-4 py-3 ${
                               subscription.plan === 'STARTER' 
-                                ? 'bg-violet-600 hover:bg-violet-700 text-white border-violet-600'
+                                ? 'bg-cyan-600 hover:bg-cyan-700 text-white border-cyan-600'
                                 : 'border-orange-200 dark:border-orange-700 text-orange-600 dark:text-orange-400 hover:bg-orange-50 dark:hover:bg-orange-900/20'
                             }`}
                             onClick={() => subscription.plan === 'STARTER' ? handleUpgrade('PRO') : handleDowngrade('PRO')}
@@ -504,10 +504,10 @@ export default function SubscriptionPage() {
                       <CardContent className="p-4 sm:p-4 flex flex-col flex-1">
                         <div className="flex items-center justify-between mb-4 sm:mb-3">
                           <div className="flex items-center gap-3">
-                            <Crown className="h-5 w-5 sm:h-5 sm:w-5 text-purple-600" />
+                            <Crown className="h-5 w-5 sm:h-5 sm:w-5 text-blue-600" />
                             <h3 className="font-semibold text-base sm:text-base">Enterprise Plan</h3>
                           </div>
-                          <Badge variant="outline" className="text-purple-600 text-sm sm:text-sm px-3 py-1">
+                          <Badge variant="outline" className="text-blue-600 text-sm sm:text-sm px-3 py-1">
                             $79/month
                           </Badge>
                         </div>
@@ -523,8 +523,8 @@ export default function SubscriptionPage() {
                             size="default"
                             className={`w-full text-base sm:text-sm px-4 py-3 ${
                               subscription.plan === 'STARTER' 
-                                ? 'bg-purple-600 hover:bg-purple-700 text-white'
-                                : 'bg-violet-600 hover:bg-violet-700 text-white'
+                                ? 'bg-blue-600 hover:bg-blue-700 text-white'
+                                : 'bg-cyan-600 hover:bg-cyan-700 text-white'
                             }`}
                             onClick={() => subscription.plan === 'STARTER' ? handleUpgrade('ENTERPRISE') : handleUpgrade('ENTERPRISE')}
                           >
@@ -547,10 +547,10 @@ export default function SubscriptionPage() {
                     <CardContent className="p-4 flex flex-col flex-1">
                       <div className="flex items-center justify-between mb-4">
                         <div className="flex items-center gap-3">
-                          <Crown className="h-5 w-5 text-violet-600" />
+                          <Crown className="h-5 w-5 text-cyan-600" />
                           <h3 className="font-semibold text-base">Pro Plan</h3>
                         </div>
-                        <Badge variant="outline" className="text-violet-600 text-sm px-3 py-1">
+                        <Badge variant="outline" className="text-cyan-600 text-sm px-3 py-1">
                           $29/month
                         </Badge>
                       </div>
@@ -566,7 +566,7 @@ export default function SubscriptionPage() {
                           size="default"
                           className={`w-full text-base px-4 py-3 ${
                             subscription.plan === 'STARTER' 
-                              ? 'bg-violet-600 hover:bg-violet-700 text-white border-violet-600'
+                              ? 'bg-cyan-600 hover:bg-cyan-700 text-white border-cyan-600'
                               : 'border-orange-200 dark:border-orange-700 text-orange-600 dark:text-orange-400 hover:bg-orange-50 dark:hover:bg-orange-900/20'
                           }`}
                           onClick={() => subscription.plan === 'STARTER' ? handleUpgrade('PRO') : handleDowngrade('PRO')}
@@ -622,10 +622,10 @@ export default function SubscriptionPage() {
                     <CardContent className="p-4 flex flex-col flex-1">
                       <div className="flex items-center justify-between mb-4">
                         <div className="flex items-center gap-3">
-                          <Crown className="h-5 w-5 text-purple-600" />
+                          <Crown className="h-5 w-5 text-blue-600" />
                           <h3 className="font-semibold text-base">Enterprise Plan</h3>
                         </div>
-                        <Badge variant="outline" className="text-purple-600 text-sm px-3 py-1">
+                        <Badge variant="outline" className="text-blue-600 text-sm px-3 py-1">
                           $79/month
                         </Badge>
                       </div>
@@ -641,8 +641,8 @@ export default function SubscriptionPage() {
                           size="default"
                           className={`w-full text-base px-4 py-3 ${
                             subscription.plan === 'STARTER' 
-                              ? 'bg-purple-600 hover:bg-purple-700 text-white'
-                              : 'bg-violet-600 hover:bg-violet-700 text-white'
+                              ? 'bg-blue-600 hover:bg-blue-700 text-white'
+                              : 'bg-cyan-600 hover:bg-cyan-700 text-white'
                           }`}
                           onClick={() => subscription.plan === 'STARTER' ? handleUpgrade('ENTERPRISE') : handleUpgrade('ENTERPRISE')}
                         >

@@ -32,7 +32,7 @@ const CTA = React.forwardRef<HTMLDivElement, CTAProps>(
                 <Button
                   asChild
                   size="lg"
-                  className="bg-violet-600 hover:bg-violet-700 dark:bg-violet-700 dark:hover:bg-violet-800 text-white font-medium"
+                  className="bg-cyan-600 hover:bg-cyan-700 dark:bg-cyan-700 dark:hover:bg-cyan-800 text-white font-medium"
                 >
                   <Link href="/auth/signup">Get Started for Free</Link>
                 </Button>
@@ -53,8 +53,8 @@ const CTA = React.forwardRef<HTMLDivElement, CTAProps>(
                 <CardContent className="p-6">
                   <div className="space-y-4">
                     <div className="flex items-center">
-                      <div className="h-10 w-10 rounded-full bg-violet-100 dark:bg-violet-900/30 flex items-center justify-center mr-4">
-                        <CheckCircle className="h-5 w-5 text-violet-600 dark:text-violet-400" />
+                      <div className="h-10 w-10 rounded-full bg-cyan-100 dark:bg-cyan-900/30 flex items-center justify-center mr-4">
+                        <CheckCircle className="h-5 w-5 text-cyan-600 dark:text-cyan-400" />
                       </div>
                       <div>
                         <h3 className="text-lg font-medium text-foreground">
@@ -66,8 +66,8 @@ const CTA = React.forwardRef<HTMLDivElement, CTAProps>(
                       </div>
                     </div>
                     <div className="flex items-center">
-                      <div className="h-10 w-10 rounded-full bg-violet-100 dark:bg-violet-900/30 flex items-center justify-center mr-4">
-                        <CheckCircle className="h-5 w-5 text-violet-600 dark:text-violet-400" />
+                      <div className="h-10 w-10 rounded-full bg-cyan-100 dark:bg-cyan-900/30 flex items-center justify-center mr-4">
+                        <CheckCircle className="h-5 w-5 text-cyan-600 dark:text-cyan-400" />
                       </div>
                       <div>
                         <h3 className="text-lg font-medium text-foreground">
@@ -79,8 +79,8 @@ const CTA = React.forwardRef<HTMLDivElement, CTAProps>(
                       </div>
                     </div>
                     <div className="flex items-center">
-                      <div className="h-10 w-10 rounded-full bg-violet-100 dark:bg-violet-900/30 flex items-center justify-center mr-4">
-                        <CheckCircle className="h-5 w-5 text-violet-600 dark:text-violet-400" />
+                      <div className="h-10 w-10 rounded-full bg-cyan-100 dark:bg-cyan-900/30 flex items-center justify-center mr-4">
+                        <CheckCircle className="h-5 w-5 text-cyan-600 dark:text-cyan-400" />
                       </div>
                       <div>
                         <h3 className="text-lg font-medium text-foreground">

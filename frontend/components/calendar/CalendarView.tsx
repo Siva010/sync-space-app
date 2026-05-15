@@ -115,7 +115,7 @@ export default function CalendarView({
         ? "h-10 p-0.5 relative flex flex-col items-center justify-center"
         : "h-12 sm:h-20 md:h-28 border border-border p-1 flex flex-col",
       {
-        "bg-violet-50 dark:bg-violet-950/20": isToday(day),
+        "bg-cyan-50 dark:bg-cyan-950/20": isToday(day),
         "text-muted-foreground": !isSameMonth(day, selectedDate),
         "bg-muted/50": isWeekend(day) && isSameMonth(day, selectedDate),
         "cursor-pointer hover:bg-muted/70": true,
@@ -127,7 +127,7 @@ export default function CalendarView({
     const type = event.type || "";
 
     if (type === "project-start")
-      return "bg-violet-100 text-violet-800 dark:bg-violet-900/30 dark:text-violet-300";
+      return "bg-cyan-100 text-cyan-800 dark:bg-cyan-900/30 dark:text-cyan-300";
     if (type === "project-due")
       return "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300";
     if (type === "task-due") {
@@ -185,7 +185,7 @@ export default function CalendarView({
                   <span
                     className={cn("text-xs font-medium", {
                       "text-foreground": isSameMonth(day, selectedDate),
-                      "text-violet-600 dark:text-violet-400 font-bold":
+                      "text-cyan-600 dark:text-cyan-400 font-bold":
                         isToday(day),
                     })}
                   >
@@ -193,7 +193,7 @@ export default function CalendarView({
                   </span>
                   {getEventsForDay(day).length > 0 && (
                     <div className="absolute bottom-0 w-full flex justify-center">
-                      <div className="h-1.5 w-1.5 bg-violet-500 rounded-full mb-0.5"></div>
+                      <div className="h-1.5 w-1.5 bg-cyan-500 rounded-full mb-0.5"></div>
                     </div>
                   )}
                 </>
@@ -203,14 +203,14 @@ export default function CalendarView({
                     <span
                       className={cn("text-xs font-medium", {
                         "text-foreground": isSameMonth(day, selectedDate),
-                        "text-violet-600 dark:text-violet-400 font-bold":
+                        "text-cyan-600 dark:text-cyan-400 font-bold":
                           isToday(day),
                       })}
                     >
                       {format(day, "d")}
                     </span>
                     {isToday(day) && (
-                      <Badge className="bg-violet-500 hover:bg-violet-600 h-4 px-1">
+                      <Badge className="bg-cyan-500 hover:bg-cyan-600 h-4 px-1">
                         Today
                       </Badge>
                     )}
@@ -323,7 +323,7 @@ export default function CalendarView({
                   <CalendarDays className="h-5 w-5" />
                   {format(selectedDay, "MMMM d, yyyy")}
                   {isToday(selectedDay) && (
-                    <Badge className="bg-violet-500 hover:bg-violet-600 ml-2">
+                    <Badge className="bg-cyan-500 hover:bg-cyan-600 ml-2">
                       Today
                     </Badge>
                   )}

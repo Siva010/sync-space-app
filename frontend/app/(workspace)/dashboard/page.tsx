@@ -189,7 +189,7 @@ export default function DashboardPage() {
   if (status === "loading") {
     return (
       <div className="flex h-[calc(100vh-2rem)] items-center justify-center">
-        <Loader2 className="h-8 w-8 animate-spin text-violet-700" />
+        <Loader2 className="h-8 w-8 animate-spin text-cyan-700" />
       </div>
     );
   }
@@ -199,7 +199,7 @@ export default function DashboardPage() {
   if (isLoading && isInitialRender) {
     return (
       <div className="flex h-[calc(100vh-2rem)] items-center justify-center">
-        <Loader2 className="h-8 w-8 animate-spin text-violet-700" />
+        <Loader2 className="h-8 w-8 animate-spin text-cyan-700" />
       </div>
     );
   }
@@ -272,7 +272,7 @@ export default function DashboardPage() {
 
       {isLoading && !isInitialRender && (
         <div className="fixed bottom-4 right-4 bg-background shadow-lg rounded-full p-2 z-50 border">
-          <Loader2 className="h-6 w-6 animate-spin text-violet-700" />
+          <Loader2 className="h-6 w-6 animate-spin text-cyan-700" />
         </div>
       )}
     </div>

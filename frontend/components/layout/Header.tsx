@@ -120,7 +120,7 @@ export default function Header() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center gap-2">
               <motion.div
-                className="h-10 w-10 rounded-full bg-violet-700 flex items-center justify-center"
+                className="h-10 w-10 rounded-full bg-cyan-700 flex items-center justify-center"
                 whileHover={{ scale: 1.05, rotate: 360 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
                 whileTap={{ scale: 0.95 }}
@@ -135,12 +135,12 @@ export default function Header() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                    d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
                   />
                 </svg>
               </motion.div>
 
-              <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-violet-700 to-purple-600">
+              <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-700 to-blue-600">
                 SyncSpace
               </span>
             </Link>
@@ -149,7 +149,7 @@ export default function Header() {
                 <DropdownMenuTrigger asChild>
                   <Button
                     variant="ghost"
-                    className="flex items-center gap-1 text-foreground/70 hover:text-violet-900 dark:hover:text-violet-400"
+                    className="flex items-center gap-1 text-foreground/70 hover:text-cyan-900 dark:hover:text-cyan-400"
                   >
                     Features
                     <ChevronDown className="h-4 w-4" />
@@ -160,8 +160,8 @@ export default function Header() {
                     className="flex items-center gap-2 cursor-pointer"
                     onClick={() => scrollToSection("features")}
                   >
-                    <div className="h-8 w-8 rounded-md bg-violet-100 flex items-center justify-center">
-                      <Zap className="h-4 w-4 text-violet-700" />
+                    <div className="h-8 w-8 rounded-md bg-cyan-100 flex items-center justify-center">
+                      <Zap className="h-4 w-4 text-cyan-700" />
                     </div>
                     <div>
                       <p className="font-medium">Project Management</p>
@@ -174,8 +174,8 @@ export default function Header() {
                     className="flex items-center gap-2 cursor-pointer"
                     onClick={() => scrollToSection("features")}
                   >
-                    <div className="h-8 w-8 rounded-md bg-violet-100 flex items-center justify-center">
-                      <User className="h-4 w-4 text-violet-700" />
+                    <div className="h-8 w-8 rounded-md bg-cyan-100 flex items-center justify-center">
+                      <User className="h-4 w-4 text-cyan-700" />
                     </div>
                     <div>
                       <p className="font-medium">Team Collaboration</p>
@@ -189,7 +189,7 @@ export default function Header() {
 
               <Button
                 variant="ghost"
-                className="text-foreground/70 hover:text-violet-900 dark:hover:text-violet-400"
+                className="text-foreground/70 hover:text-cyan-900 dark:hover:text-cyan-400"
                 onClick={() => scrollToSection("pricing")}
               >
                 Pricing
@@ -197,7 +197,7 @@ export default function Header() {
 
               <Button
                 variant="ghost"
-                className="text-foreground/70 hover:text-violet-900 dark:hover:text-violet-400"
+                className="text-foreground/70 hover:text-cyan-900 dark:hover:text-cyan-400"
                 onClick={() => scrollToSection("testimonials")}
               >
                 Testimonials
@@ -205,7 +205,7 @@ export default function Header() {
 
               <Button
                 variant="ghost"
-                className="text-foreground/70 hover:text-violet-900 dark:hover:text-violet-400"
+                className="text-foreground/70 hover:text-cyan-900 dark:hover:text-cyan-400"
                 onClick={() => scrollToSection("cta")}
               >
                 FAQ
@@ -215,7 +215,7 @@ export default function Header() {
                 <Button
                   variant="ghost"
                   asChild
-                  className="text-foreground/70 hover:text-violet-900 dark:hover:text-violet-400"
+                  className="text-foreground/70 hover:text-cyan-900 dark:hover:text-cyan-400"
                 >
                   <Link href="/dashboard">Dashboard</Link>
                 </Button>
@@ -242,7 +242,7 @@ export default function Header() {
                           alt={userName}
                           className="object-cover"
                         />
-                        <AvatarFallback className="bg-gradient-to-br from-violet-500 to-indigo-700 text-white text-sm">
+                        <AvatarFallback className="bg-gradient-to-br from-cyan-500 to-indigo-700 text-white text-sm">
                           {getInitials(userName)}
                         </AvatarFallback>
                       </Avatar>
@@ -298,13 +298,13 @@ export default function Header() {
                 <Button
                   asChild
                   variant="ghost"
-                  className="text-foreground/70 hover:text-violet-900 dark:hover:text-violet-400"
+                  className="text-foreground/70 hover:text-cyan-900 dark:hover:text-cyan-400"
                 >
                   <Link href="/auth/signin">Sign In</Link>
                 </Button>
                 <Button
                   asChild
-                  className="bg-violet-700 hover:bg-violet-900 text-white"
+                  className="bg-cyan-700 hover:bg-cyan-900 text-white"
                 >
                   <Link href="/auth/signup">Sign Up</Link>
                 </Button>
@@ -315,7 +315,7 @@ export default function Header() {
             <ThemeToggle />
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted focus:outline-none focus:ring-2 focus:ring-inset focus:ring-violet-500 ml-2"
+              className="inline-flex items-center justify-center p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500 ml-2"
             >
               <span className="sr-only">Open main menu</span>
               {mobileMenuOpen ? (
@@ -340,25 +340,25 @@ export default function Header() {
           >
             <div className="pt-2 pb-3 space-y-1 px-4">
               <button
-                className="block w-full text-left py-2 px-3 text-base font-medium text-foreground/70 hover:bg-violet-50 hover:text-violet-900 rounded-md"
+                className="block w-full text-left py-2 px-3 text-base font-medium text-foreground/70 hover:bg-cyan-50 hover:text-cyan-900 rounded-md"
                 onClick={() => scrollToSection("features")}
               >
                 Features
               </button>
               <button
-                className="block w-full text-left py-2 px-3 text-base font-medium text-foreground/70 hover:bg-violet-50 hover:text-violet-900 rounded-md"
+                className="block w-full text-left py-2 px-3 text-base font-medium text-foreground/70 hover:bg-cyan-50 hover:text-cyan-900 rounded-md"
                 onClick={() => scrollToSection("pricing")}
               >
                 Pricing
               </button>
               <button
-                className="block w-full text-left py-2 px-3 text-base font-medium text-foreground/70 hover:bg-violet-50 hover:text-violet-900 rounded-md"
+                className="block w-full text-left py-2 px-3 text-base font-medium text-foreground/70 hover:bg-cyan-50 hover:text-cyan-900 rounded-md"
                 onClick={() => scrollToSection("testimonials")}
               >
                 Testimonials
               </button>
               <button
-                className="block w-full text-left py-2 px-3 text-base font-medium text-foreground/70 hover:bg-violet-50 hover:text-violet-900 rounded-md"
+                className="block w-full text-left py-2 px-3 text-base font-medium text-foreground/70 hover:bg-cyan-50 hover:text-cyan-900 rounded-md"
                 onClick={() => scrollToSection("cta")}
               >
                 FAQ
@@ -366,7 +366,7 @@ export default function Header() {
               {isAuthenticated && (
                 <Link
                   href="/dashboard"
-                  className="block py-2 px-3 text-base font-medium text-foreground/70 hover:bg-violet-50 hover:text-violet-900 rounded-md"
+                  className="block py-2 px-3 text-base font-medium text-foreground/70 hover:bg-cyan-50 hover:text-cyan-900 rounded-md"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Dashboard
@@ -391,14 +391,14 @@ export default function Header() {
                 <div className="mt-3 space-y-1 px-2">
                   <Link
                     href="/auth/signin"
-                    className="block px-3 py-2 rounded-md text-base font-medium text-foreground/70 hover:bg-violet-50 hover:text-violet-900"
+                    className="block px-3 py-2 rounded-md text-base font-medium text-foreground/70 hover:bg-cyan-50 hover:text-cyan-900"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Sign in
                   </Link>
                   <Link
                     href="/auth/signup"
-                    className="block px-3 py-2 rounded-md text-base font-medium text-foreground/70 hover:bg-violet-50 hover:text-violet-900"
+                    className="block px-3 py-2 rounded-md text-base font-medium text-foreground/70 hover:bg-cyan-50 hover:text-cyan-900"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Sign up

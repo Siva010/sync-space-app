@@ -140,8 +140,8 @@ export function UpgradePrompt({ type, currentCount, limit, plan, onClose }: Upgr
 
             <CardHeader className="text-center pb-4">
               <div className="flex justify-center mb-4">
-                <div className="p-3 bg-violet-100 dark:bg-violet-900/30 rounded-full">
-                  <Icon className="h-8 w-8 text-violet-600 dark:text-violet-400" />
+                <div className="p-3 bg-cyan-100 dark:bg-cyan-900/30 rounded-full">
+                  <Icon className="h-8 w-8 text-cyan-600 dark:text-cyan-400" />
                 </div>
               </div>
               <CardTitle className="text-2xl font-bold">
@@ -172,14 +172,14 @@ export function UpgradePrompt({ type, currentCount, limit, plan, onClose }: Upgr
                         key={planKey}
                         className={`relative p-4 rounded-lg border-2 transition-all ${
                           isCurrentPlan
-                            ? 'border-violet-200 bg-violet-50 dark:border-violet-400 dark:bg-violet-950/20'
+                            ? 'border-cyan-200 bg-cyan-50 dark:border-cyan-400 dark:bg-cyan-950/20'
                             : isRecommended
-                            ? 'border-violet-500 bg-violet-50 dark:border-violet-400 dark:bg-violet-950/20'
-                            : 'border-border hover:border-violet-200 dark:hover:border-violet-400'
+                            ? 'border-cyan-500 bg-cyan-50 dark:border-cyan-400 dark:bg-cyan-950/20'
+                            : 'border-border hover:border-cyan-200 dark:hover:border-cyan-400'
                         }`}
                       >
                         {isRecommended && (
-                          <Badge className="absolute -top-2 left-1/2 transform -translate-x-1/2 bg-violet-600">
+                          <Badge className="absolute -top-2 left-1/2 transform -translate-x-1/2 bg-cyan-600">
                             Recommended
                           </Badge>
                         )}
@@ -218,7 +218,7 @@ export function UpgradePrompt({ type, currentCount, limit, plan, onClose }: Upgr
                               isCurrentPlan
                                 ? 'opacity-50 cursor-not-allowed'
                                 : isRecommended
-                                ? 'bg-violet-600 hover:bg-violet-700'
+                                ? 'bg-cyan-600 hover:bg-cyan-700'
                                 : ''
                             }`}
                             disabled={isCurrentPlan}

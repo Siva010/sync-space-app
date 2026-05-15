@@ -51,7 +51,7 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        violet: {
+        cyan: {
           50: "#f5f3ff",
           100: "#ede9fe",
           200: "#ddd6fe",
@@ -64,7 +64,7 @@ const config: Config = {
           900: "#4c1d95",
           950: "#2e1065",
         },
-        purple: {
+        blue: {
           50: "#faf5ff",
           100: "#f3e8ff",
           200: "#e9d5ff",

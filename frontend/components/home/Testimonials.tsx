@@ -119,7 +119,7 @@ const Testimonials = React.forwardRef<HTMLDivElement, TestimonialsProps>(
           part.toLowerCase() === highlight.toLowerCase() ? (
             <span
               key={i}
-              className="text-violet-600 dark:text-violet-400 cursor-pointer"
+              className="text-cyan-600 dark:text-cyan-400 cursor-pointer"
               onClick={() => {
                 window.location.href =
                   "https://github.com/syncspace-admin/syncspace-app";
@@ -182,8 +182,8 @@ const Testimonials = React.forwardRef<HTMLDivElement, TestimonialsProps>(
       >
         <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
           <div className="text-center mb-8 sm:mb-12">
-            <div className="inline-flex items-center rounded-full bg-violet-50 dark:bg-zinc-800/50 px-3 py-1 sm:px-4 sm:py-1.5 mb-3 sm:mb-4">
-              <span className="text-violet-900 dark:text-violet-300 text-sm font-medium flex items-center">
+            <div className="inline-flex items-center rounded-full bg-cyan-50 dark:bg-zinc-800/50 px-3 py-1 sm:px-4 sm:py-1.5 mb-3 sm:mb-4">
+              <span className="text-cyan-900 dark:text-cyan-300 text-sm font-medium flex items-center">
                 <Star className="h-4 w-4 mr-1.5" /> Testimonials
               </span>
             </div>

@@ -177,13 +177,13 @@ const Hero = React.forwardRef<HTMLDivElement, HeroProps>(
       switch (currentView) {
         case "calendar":
           return (
-            <div className="h-40 rounded-lg bg-violet-50 dark:bg-violet-900/20 p-3 overflow-hidden">
+            <div className="h-40 rounded-lg bg-cyan-50 dark:bg-cyan-900/20 p-3 overflow-hidden">
               <div className="flex justify-between items-center mb-2">
                 <h3 className="text-sm font-medium text-foreground flex items-center">
                   <CalendarIcon className="h-3 w-3 mr-1" />
                   Calendar View
                 </h3>
-                <span className="text-xs text-violet-700 dark:text-violet-400">
+                <span className="text-xs text-cyan-700 dark:text-cyan-400">
                   May 2025
                 </span>
               </div>
@@ -220,10 +220,10 @@ const Hero = React.forwardRef<HTMLDivElement, HeroProps>(
                       key={i}
                       className={`text-center py-1 px-0.5 rounded text-xs h-6 flex items-center justify-center ${
                         isToday
-                          ? "bg-violet-700 text-white"
+                          ? "bg-cyan-700 text-white"
                           : hasEvent
-                          ? "bg-violet-200 dark:bg-violet-800 text-violet-900 dark:text-violet-300"
-                          : "text-foreground hover:bg-violet-100 dark:hover:bg-violet-800"
+                          ? "bg-cyan-200 dark:bg-cyan-800 text-cyan-900 dark:text-cyan-300"
+                          : "text-foreground hover:bg-cyan-100 dark:hover:bg-cyan-800"
                       }`}
                     >
                       {date > 31 ? date - 31 : date}
@@ -236,20 +236,20 @@ const Hero = React.forwardRef<HTMLDivElement, HeroProps>(
 
         case "team":
           return (
-            <div className="h-40 rounded-lg bg-violet-50 dark:bg-violet-900/20 p-3 overflow-hidden">
+            <div className="h-40 rounded-lg bg-cyan-50 dark:bg-cyan-900/20 p-3 overflow-hidden">
               <div className="flex justify-between items-center mb-2">
                 <h3 className="text-sm font-medium text-foreground flex items-center">
                   <Users className="h-3 w-3 mr-1" />
                   Team Members
                 </h3>
-                <span className="text-xs text-violet-700 dark:text-violet-400">
+                <span className="text-xs text-cyan-700 dark:text-cyan-400">
                   3 members
                 </span>
               </div>
               <div className="space-y-2.5">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center">
-                    <div className="h-6 w-6 rounded-full bg-violet-600 flex items-center justify-center mr-2">
+                    <div className="h-6 w-6 rounded-full bg-cyan-600 flex items-center justify-center mr-2">
                       <Shield className="h-3 w-3 text-white" />
                     </div>
                     <div>
@@ -301,13 +301,13 @@ const Hero = React.forwardRef<HTMLDivElement, HeroProps>(
 
         default:
           return (
-            <div className="h-40 rounded-lg bg-violet-50 dark:bg-violet-900/20 p-4">
+            <div className="h-40 rounded-lg bg-cyan-50 dark:bg-cyan-900/20 p-4">
               <div className="flex justify-between items-center mb-3">
                 <h3 className="font-medium text-foreground">
                   Project Progress
                 </h3>
                 <motion.span
-                  className="text-sm text-violet-700 dark:text-violet-400"
+                  className="text-sm text-cyan-700 dark:text-cyan-400"
                   key={projectProgress}
                   initial={{ scale: 1 }}
                   animate={{ scale: [1, 1.2, 1] }}
@@ -316,9 +316,9 @@ const Hero = React.forwardRef<HTMLDivElement, HeroProps>(
                   {projectProgress}%
                 </motion.span>
               </div>
-              <div className="h-2 w-full bg-violet-100 dark:bg-violet-800/50 rounded-full mb-4">
+              <div className="h-2 w-full bg-cyan-100 dark:bg-cyan-800/50 rounded-full mb-4">
                 <motion.div
-                  className="h-2 rounded-full bg-violet-700 dark:bg-violet-500"
+                  className="h-2 rounded-full bg-cyan-700 dark:bg-cyan-500"
                   initial={{ width: "75%" }}
                   animate={{ width: `${projectProgress}%` }}
                   transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -345,7 +345,7 @@ const Hero = React.forwardRef<HTMLDivElement, HeroProps>(
                     {completedTasks[2] ? (
                       <CheckCircle className="h-4 w-4 text-green-500 dark:text-green-400 mr-2" />
                     ) : (
-                      <div className="h-4 w-4 border-2 border-violet-300 dark:border-violet-600 rounded-full mr-2"></div>
+                      <div className="h-4 w-4 border-2 border-cyan-300 dark:border-cyan-600 rounded-full mr-2"></div>
                     )}
                   </motion.div>
                   <span className="text-sm text-muted-foreground">
@@ -366,7 +366,7 @@ const Hero = React.forwardRef<HTMLDivElement, HeroProps>(
 
     return (
       <div
-        className="bg-gradient-to-br from-violet-50 via-background to-purple-50 dark:from-violet-950/30 dark:via-background dark:to-purple-950/20"
+        className="bg-gradient-to-br from-cyan-50 via-background to-blue-50 dark:from-cyan-950/30 dark:via-background dark:to-blue-950/20"
         ref={ref}
       >
         <div
@@ -382,12 +382,12 @@ const Hero = React.forwardRef<HTMLDivElement, HeroProps>(
               transition={{ duration: 0.6 }}
             >
               <motion.div
-                className="inline-flex items-center rounded-full bg-violet-100 dark:bg-violet-900/30 px-4 py-1.5 mb-6"
+                className="inline-flex items-center rounded-full bg-cyan-100 dark:bg-cyan-900/30 px-4 py-1.5 mb-6"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
               >
-                <span className="text-violet-900 dark:text-violet-300 text-sm font-medium flex items-center">
+                <span className="text-cyan-900 dark:text-cyan-300 text-sm font-medium flex items-center">
                   <Zap className="h-4 w-4 mr-1.5" /> Introducing SyncSpace
                 </span>
               </motion.div>
@@ -399,7 +399,7 @@ const Hero = React.forwardRef<HTMLDivElement, HeroProps>(
               >
                 <span className="block">Collaborate</span>
                 <span className="block">Seamlessly on</span>
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-700 to-purple-600 dark:from-violet-500 dark:to-purple-400">
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-700 to-blue-600 dark:from-cyan-500 dark:to-blue-400">
                   Projects
                 </span>
               </motion.h1>
@@ -424,7 +424,7 @@ const Hero = React.forwardRef<HTMLDivElement, HeroProps>(
                     <Button
                       asChild
                       size="lg"
-                      className="bg-violet-700 hover:bg-violet-900 dark:bg-violet-600 dark:hover:bg-violet-700 text-white font-medium px-8 py-6 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+                      className="bg-cyan-700 hover:bg-cyan-900 dark:bg-cyan-600 dark:hover:bg-cyan-700 text-white font-medium px-8 py-6 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
                     >
                       <Link href="/dashboard">
                         Dashboard <ArrowRight className="ml-2 h-5 w-5" />
@@ -444,7 +444,7 @@ const Hero = React.forwardRef<HTMLDivElement, HeroProps>(
                     <Button
                       asChild
                       size="lg"
-                      className="bg-violet-700 hover:bg-violet-900 dark:bg-violet-600 dark:hover:bg-violet-700 text-white font-medium px-8 py-6 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+                      className="bg-cyan-700 hover:bg-cyan-900 dark:bg-cyan-600 dark:hover:bg-cyan-700 text-white font-medium px-8 py-6 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
                     >
                       <Link href="/auth/signup">
                         Get Started <ArrowRight className="ml-2 h-5 w-5" />
@@ -482,7 +482,7 @@ const Hero = React.forwardRef<HTMLDivElement, HeroProps>(
             >
               <div className="relative w-full max-w-lg">
                 <motion.div
-                  className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-violet-700 to-purple-600 opacity-30 blur-xl dark:from-violet-700/20 dark:to-purple-600/20"
+                  className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-cyan-700 to-blue-600 opacity-30 blur-xl dark:from-cyan-700/20 dark:to-blue-600/20"
                   animate={{
                     scale: [1, 1.02, 1],
                     opacity: [0.2, 0.3, 0.2],
@@ -514,7 +514,7 @@ const Hero = React.forwardRef<HTMLDivElement, HeroProps>(
                         }}
                       >
                         <MousePointer
-                          className={`h-5 w-5 text-violet-700 dark:text-violet-200 drop-shadow-lg rotate-6 ${
+                          className={`h-5 w-5 text-cyan-700 dark:text-cyan-200 drop-shadow-lg rotate-6 ${
                             currentStep === 0 ||
                             currentStep === 2 ||
                             currentStep === 4 ||
@@ -528,7 +528,7 @@ const Hero = React.forwardRef<HTMLDivElement, HeroProps>(
                           currentStep === 5 ||
                           currentStep === 7) && (
                           <motion.div
-                            className="absolute -inset-2 rounded-full border-2 border-violet-400"
+                            className="absolute -inset-2 rounded-full border-2 border-cyan-400"
                             initial={{ scale: 0.8, opacity: 0.8 }}
                             animate={{ scale: 2, opacity: 0 }}
                             transition={{ duration: 0.3 }}
@@ -542,7 +542,7 @@ const Hero = React.forwardRef<HTMLDivElement, HeroProps>(
                   <div className="space-y-6">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-2">
-                        <div className="h-8 w-8 rounded-md bg-violet-700 flex items-center justify-center">
+                        <div className="h-8 w-8 rounded-md bg-cyan-700 flex items-center justify-center">
                           <Zap className="h-4 w-4 text-white" />
                         </div>
                         <span className="font-medium text-foreground">
@@ -560,10 +560,10 @@ const Hero = React.forwardRef<HTMLDivElement, HeroProps>(
                       <motion.div
                         className={`h-24 rounded-lg flex flex-col items-center justify-center p-2 transition-all cursor-pointer relative ${
                           activeCard === "calendar"
-                            ? "bg-violet-200 dark:bg-violet-700/50 scale-105 shadow-lg"
+                            ? "bg-cyan-200 dark:bg-cyan-700/50 scale-105 shadow-lg"
                             : currentView === "calendar"
-                            ? "bg-violet-100 dark:bg-violet-800/40"
-                            : "bg-violet-50 dark:bg-violet-900/20 hover:bg-violet-100 dark:hover:bg-violet-900/30"
+                            ? "bg-cyan-100 dark:bg-cyan-800/40"
+                            : "bg-cyan-50 dark:bg-cyan-900/20 hover:bg-cyan-100 dark:hover:bg-cyan-900/30"
                         }`}
                         animate={
                           activeCard === "calendar"
@@ -576,18 +576,18 @@ const Hero = React.forwardRef<HTMLDivElement, HeroProps>(
                           damping: 30,
                         }}
                       >
-                        <CalendarIcon className="h-8 w-8 text-violet-500 dark:text-violet-400 mb-1" />
-                        <span className="text-xs text-violet-900 dark:text-violet-300 font-medium">
+                        <CalendarIcon className="h-8 w-8 text-cyan-500 dark:text-cyan-400 mb-1" />
+                        <span className="text-xs text-cyan-900 dark:text-cyan-300 font-medium">
                           Calendar
                         </span>
                       </motion.div>
                       <motion.div
                         className={`h-24 rounded-lg flex flex-col items-center justify-center p-2 transition-all cursor-pointer relative ${
                           activeCard === "team"
-                            ? "bg-violet-200 dark:bg-violet-700/50 scale-105 shadow-lg"
+                            ? "bg-cyan-200 dark:bg-cyan-700/50 scale-105 shadow-lg"
                             : currentView === "team"
-                            ? "bg-violet-100 dark:bg-violet-800/40"
-                            : "bg-violet-50 dark:bg-violet-900/20 hover:bg-violet-100 dark:hover:bg-violet-900/30"
+                            ? "bg-cyan-100 dark:bg-cyan-800/40"
+                            : "bg-cyan-50 dark:bg-cyan-900/20 hover:bg-cyan-100 dark:hover:bg-cyan-900/30"
                         }`}
                         animate={
                           activeCard === "team" ? { scale: 1.05 } : { scale: 1 }
@@ -598,18 +598,18 @@ const Hero = React.forwardRef<HTMLDivElement, HeroProps>(
                           damping: 30,
                         }}
                       >
-                        <Users className="h-8 w-8 text-violet-500 dark:text-violet-400 mb-1" />
-                        <span className="text-xs text-violet-900 dark:text-violet-300 font-medium">
+                        <Users className="h-8 w-8 text-cyan-500 dark:text-cyan-400 mb-1" />
+                        <span className="text-xs text-cyan-900 dark:text-cyan-300 font-medium">
                           Team
                         </span>
                       </motion.div>
                       <motion.div
                         className={`h-24 rounded-lg flex flex-col items-center justify-center p-2 transition-all cursor-pointer relative ${
                           activeCard === "tasks"
-                            ? "bg-violet-200 dark:bg-violet-700/50 scale-105 shadow-lg"
+                            ? "bg-cyan-200 dark:bg-cyan-700/50 scale-105 shadow-lg"
                             : currentView === "tasks"
-                            ? "bg-violet-100 dark:bg-violet-800/40"
-                            : "bg-violet-50 dark:bg-violet-900/20 hover:bg-violet-100 dark:hover:bg-violet-900/30"
+                            ? "bg-cyan-100 dark:bg-cyan-800/40"
+                            : "bg-cyan-50 dark:bg-cyan-900/20 hover:bg-cyan-100 dark:hover:bg-cyan-900/30"
                         }`}
                         animate={
                           activeCard === "tasks"
@@ -622,8 +622,8 @@ const Hero = React.forwardRef<HTMLDivElement, HeroProps>(
                           damping: 30,
                         }}
                       >
-                        <FileText className="h-8 w-8 text-violet-500 dark:text-violet-400 mb-1" />
-                        <span className="text-xs text-violet-900 dark:text-violet-300 font-medium">
+                        <FileText className="h-8 w-8 text-cyan-500 dark:text-cyan-400 mb-1" />
+                        <span className="text-xs text-cyan-900 dark:text-cyan-300 font-medium">
                           Tasks
                         </span>
                       </motion.div>
@@ -646,13 +646,13 @@ const Hero = React.forwardRef<HTMLDivElement, HeroProps>(
                       <Button
                         size="sm"
                         variant="outline"
-                        className="text-violet-700 dark:text-violet-400 border-violet-200 dark:border-violet-800 hover:bg-violet-50 dark:hover:bg-violet-900/30"
+                        className="text-cyan-700 dark:text-cyan-400 border-cyan-200 dark:border-cyan-800 hover:bg-cyan-50 dark:hover:bg-cyan-900/30"
                       >
                         View Details
                       </Button>
                       <Button
                         size="sm"
-                        className="bg-violet-700 dark:bg-violet-600 text-white hover:bg-violet-900 dark:hover:bg-violet-700"
+                        className="bg-cyan-700 dark:bg-cyan-600 text-white hover:bg-cyan-900 dark:hover:bg-cyan-700"
                       >
                         Add Task
                       </Button>

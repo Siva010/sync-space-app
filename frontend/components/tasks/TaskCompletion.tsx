@@ -248,7 +248,7 @@ export default function TaskCompletion({
 
           <div className="space-y-2">
             <Label className="flex items-center" htmlFor="deliverables">
-              <FileUp className="h-4 w-4 mr-2 text-violet-600" />
+              <FileUp className="h-4 w-4 mr-2 text-cyan-600" />
               Deliverables
             </Label>
             <p className="text-xs text-muted-foreground">

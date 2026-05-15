@@ -296,7 +296,7 @@ export default function TaskForm({
   if (isLoading) {
     return (
       <div className="flex items-center justify-center py-12">
-        <Loader2 className="h-8 w-8 animate-spin text-violet-600" />
+        <Loader2 className="h-8 w-8 animate-spin text-cyan-600" />
       </div>
     );
   }
@@ -391,7 +391,7 @@ export default function TaskForm({
                         errors.projectId && "text-destructive"
                       )}
                     >
-                      <FolderKanban className="h-4 w-4 mr-2 text-violet-600" />
+                      <FolderKanban className="h-4 w-4 mr-2 text-cyan-600" />
                       Project*
                     </Label>
 
@@ -454,7 +454,7 @@ export default function TaskForm({
                   htmlFor="assignee"
                   className="text-base font-medium flex items-center"
                 >
-                  <Users className="h-4 w-4 mr-2 text-violet-600" />
+                  <Users className="h-4 w-4 mr-2 text-cyan-600" />
                   Assignee
                 </Label>
                 <TooltipProvider>
@@ -521,7 +521,7 @@ export default function TaskForm({
                     htmlFor="status"
                     className="text-base font-medium flex items-center"
                   >
-                    <CheckCircle2 className="h-4 w-4 mr-2 text-violet-600" />
+                    <CheckCircle2 className="h-4 w-4 mr-2 text-cyan-600" />
                     Status
                   </Label>
                   <Select
@@ -564,7 +564,7 @@ export default function TaskForm({
                   htmlFor="dueDate"
                   className="text-base font-medium flex items-center"
                 >
-                  <Clock className="h-4 w-4 mr-2 text-violet-600" />
+                  <Clock className="h-4 w-4 mr-2 text-cyan-600" />
                   Due Date
                 </Label>
                 <Input
@@ -586,7 +586,7 @@ export default function TaskForm({
                   htmlFor="priority"
                   className="text-base font-medium flex items-center"
                 >
-                  <Flag className="h-4 w-4 mr-2 text-violet-600" />
+                  <Flag className="h-4 w-4 mr-2 text-cyan-600" />
                   Priority
                 </Label>
                 <Select
@@ -632,7 +632,7 @@ export default function TaskForm({
                 htmlFor="attachments"
                 className="text-base font-medium flex items-center"
               >
-                <Paperclip className="h-4 w-4 mr-2 text-violet-600" />
+                <Paperclip className="h-4 w-4 mr-2 text-cyan-600" />
                 Attachments
               </Label>
               <TaskFileUpload
@@ -656,7 +656,7 @@ export default function TaskForm({
                 <Button
                   type="submit"
                   disabled={isSubmitting || !formData.projectId}
-                  className="bg-violet-600 hover:bg-violet-700 dark:bg-violet-600 dark:hover:bg-violet-700 text-white order-1 sm:order-2"
+                  className="bg-cyan-600 hover:bg-cyan-700 dark:bg-cyan-600 dark:hover:bg-cyan-700 text-white order-1 sm:order-2"
                   size="lg"
                 >
                   {isSubmitting ? (

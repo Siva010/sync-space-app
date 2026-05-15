@@ -22,7 +22,7 @@ export default function VerificationSuccessPage() {
     <div className="flex min-h-screen flex-col">
       <div className="flex min-h-screen flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="w-full max-w-md mx-auto">
-          <Card className="border-0 shadow-lg dark:shadow-md dark:shadow-violet-900/10">
+          <Card className="border-0 shadow-lg dark:shadow-md dark:shadow-cyan-900/10">
             <CardHeader className="space-y-1 text-center">
               <div className="flex justify-center mb-4">
                 <div className="h-16 w-16 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center">
@@ -40,7 +40,7 @@ export default function VerificationSuccessPage() {
               </p>
               <Button
                 asChild
-                className="bg-violet-600 hover:bg-violet-700 dark:bg-violet-700 dark:hover:bg-violet-800 text-white w-full"
+                className="bg-cyan-600 hover:bg-cyan-700 dark:bg-cyan-700 dark:hover:bg-cyan-800 text-white w-full"
               >
                 <Link
                   href="/auth/signin"

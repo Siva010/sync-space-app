@@ -122,7 +122,7 @@ export default function ProjectFiles({
   if (isLoading) {
     return (
       <div className="flex justify-center items-center py-12">
-        <Loader2 className="h-8 w-8 animate-spin text-violet-600" />
+        <Loader2 className="h-8 w-8 animate-spin text-cyan-600" />
       </div>
     );
   }

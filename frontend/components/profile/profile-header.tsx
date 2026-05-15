@@ -19,7 +19,7 @@ export function ProfileHeader({ isSaving, onSave }: ProfileHeaderProps) {
           <h1 className="text-3xl font-bold tracking-tight">My Profile</h1>
           <p className="text-muted-foreground mt-1">Manage your personal information and preferences</p>
         </div>
-        <Button onClick={onSave} className="bg-violet-700 hover:bg-violet-800 text-white" disabled={isSaving}>
+        <Button onClick={onSave} className="bg-cyan-700 hover:bg-cyan-800 text-white" disabled={isSaving}>
           {isSaving ? (
             <>
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />

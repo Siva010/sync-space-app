@@ -141,7 +141,7 @@ function InvitationContent() {
     switch (role) {
       case "ADMIN":
         return (
-          <Badge className="bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300">
+          <Badge className="bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300">
             Admin
           </Badge>
         );
@@ -175,14 +175,14 @@ function InvitationContent() {
           </CardHeader>
           <CardContent>
             <div className="flex flex-col items-center justify-center py-4">
-              <Shield className="h-12 w-12 text-violet-600 mb-4" />
+              <Shield className="h-12 w-12 text-cyan-600 mb-4" />
               <p className="text-center mb-6">
                 You need to sign in to your account to accept this project
                 invitation.
               </p>
               <Button
                 asChild
-                className="w-full bg-violet-700 hover:bg-violet-800 text-white"
+                className="w-full bg-cyan-700 hover:bg-cyan-800 text-white"
               >
                 <Link
                   href={`/auth/signin?callbackUrl=${encodeURIComponent(
@@ -204,7 +204,7 @@ function InvitationContent() {
       <div className="flex min-h-screen flex-col items-center justify-center px-4">
         <Card className="w-full max-w-md border-0 shadow-lg">
           <CardContent className="flex flex-col items-center justify-center py-12">
-            <Loader2 className="h-12 w-12 animate-spin text-violet-700 mb-4" />
+            <Loader2 className="h-12 w-12 animate-spin text-cyan-700 mb-4" />
             <p className="text-lg">Verifying invitation...</p>
           </CardContent>
         </Card>
@@ -353,7 +353,7 @@ function InvitationContent() {
             )}
           </Button>
           <Button
-            className="w-full sm:w-auto bg-violet-700 hover:bg-violet-800 text-white"
+            className="w-full sm:w-auto bg-cyan-700 hover:bg-cyan-800 text-white"
             onClick={handleAccept}
             disabled={processing}
           >
@@ -378,7 +378,7 @@ function LoadingFallback() {
     <div className="flex min-h-screen flex-col items-center justify-center px-4">
       <Card className="w-full max-w-md border-0 shadow-lg">
         <CardContent className="flex flex-col items-center justify-center py-12">
-          <Loader2 className="h-12 w-12 animate-spin text-violet-700 mb-4" />
+          <Loader2 className="h-12 w-12 animate-spin text-cyan-700 mb-4" />
           <p className="text-lg">Loading invitation...</p>
         </CardContent>
       </Card>

@@ -25,14 +25,14 @@ const planInfo = {
   PRO: {
     name: 'Pro',
     icon: Crown,
-    color: 'text-violet-600 dark:text-violet-400',
-    bgColor: 'bg-violet-100 dark:bg-violet-900/30',
+    color: 'text-cyan-600 dark:text-cyan-400',
+    bgColor: 'bg-cyan-100 dark:bg-cyan-900/30',
   },
   ENTERPRISE: {
     name: 'Enterprise',
     icon: Crown,
-    color: 'text-purple-600 dark:text-purple-400',
-    bgColor: 'bg-purple-100 dark:bg-purple-900/30',
+    color: 'text-blue-600 dark:text-blue-400',
+    bgColor: 'bg-blue-100 dark:bg-blue-900/30',
   },
 };
 

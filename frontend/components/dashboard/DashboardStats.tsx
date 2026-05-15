@@ -15,11 +15,11 @@ export default function DashboardStats({ stats }: StatsProps) {
   return (
     <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
       <Link href="/projects">
-        <Card className="bg-gradient-to-br from-violet-50 to-purple-50 dark:from-violet-950/40 dark:to-purple-950/40 border-violet-100 dark:border-violet-900/50">
+        <Card className="bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-cyan-950/40 dark:to-blue-950/40 border-cyan-100 dark:border-cyan-900/50">
           <CardContent className="p-4">
             <div className="flex items-center gap-3">
-              <div className="rounded-full bg-violet-100 dark:bg-violet-900/50 p-2">
-                <LayoutGrid className="h-5 w-5 text-violet-700 dark:text-violet-400" />
+              <div className="rounded-full bg-cyan-100 dark:bg-cyan-900/50 p-2">
+                <LayoutGrid className="h-5 w-5 text-cyan-700 dark:text-cyan-400" />
               </div>
               <div>
                 <p className="text-sm font-medium text-muted-foreground">

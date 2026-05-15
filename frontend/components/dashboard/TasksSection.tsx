@@ -44,7 +44,7 @@ export default function TasksSection({
         <Button
           asChild
           variant="ghost"
-          className="text-sm text-muted-foreground hover:text-violet-700 dark:hover:text-violet-400"
+          className="text-sm text-muted-foreground hover:text-cyan-700 dark:hover:text-cyan-400"
           size="sm"
         >
           <Link href="/tasks" className="flex items-center">

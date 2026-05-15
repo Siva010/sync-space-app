@@ -58,7 +58,7 @@ export function WelcomeBanner({
 
   return (
     <motion.div
-      className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-violet-600 to-violet-800 p-8 text-white shadow-lg"
+      className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-cyan-600 to-cyan-800 p-8 text-white shadow-lg"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -121,7 +121,7 @@ export function WelcomeBanner({
           <Link href="/projects/create">
             <Button
               size="sm"
-              className="rounded-full bg-white text-violet-800 hover:bg-white/90 cursor-pointer"
+              className="rounded-full bg-white text-cyan-800 hover:bg-white/90 cursor-pointer"
             >
               <PlusCircle className="mr-2 h-4 w-4" />
               Create Project

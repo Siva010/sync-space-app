@@ -89,7 +89,7 @@ function CalendarPage() {
   if (status === "loading") {
     return (
       <div className="flex h-[calc(100vh-2rem)] items-center justify-center">
-        <Loader2 className="h-8 w-8 animate-spin text-violet-700" />
+        <Loader2 className="h-8 w-8 animate-spin text-cyan-700" />
       </div>
     );
   }
@@ -115,7 +115,7 @@ function CalendarPage() {
   if (isLoading && isInitialRender) {
     return (
       <div className="flex h-[calc(100vh-2rem)] items-center justify-center">
-        <Loader2 className="h-8 w-8 animate-spin text-violet-700" />
+        <Loader2 className="h-8 w-8 animate-spin text-cyan-700" />
       </div>
     );
   }
@@ -247,7 +247,7 @@ function CalendarPage() {
 
       {isLoading && !isInitialRender && (
         <div className="fixed bottom-4 right-4 bg-background shadow-lg rounded-full p-2 z-50 border">
-          <Loader2 className="h-6 w-6 animate-spin text-violet-700" />
+          <Loader2 className="h-6 w-6 animate-spin text-cyan-700" />
         </div>
       )}
     </div>
@@ -259,7 +259,7 @@ function LoadingState() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow">
         <div className="flex items-center justify-center min-h-[calc(100vh-200px)]">
-          <Loader2 className="h-8 w-8 animate-spin text-violet-700" />
+          <Loader2 className="h-8 w-8 animate-spin text-cyan-700" />
         </div>
       </main>
     </div>

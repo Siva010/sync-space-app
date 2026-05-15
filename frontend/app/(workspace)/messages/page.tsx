@@ -31,7 +31,7 @@ export default function MessagesPage() {
       <Suspense
         fallback={
           <div className="flex flex-col items-center justify-center min-h-[50vh] space-y-4">
-            <Loader2 className="h-8 w-8 animate-spin text-violet-700" />
+            <Loader2 className="h-8 w-8 animate-spin text-cyan-700" />
           </div>
         }
       >

@@ -105,7 +105,7 @@ const ChatInput: React.FC<ChatInputProps> = ({
           type="submit"
           size="icon"
           disabled={!message.trim() || isLoading || disabled}
-          className="bg-violet-700 hover:bg-violet-800 text-white flex items-center cursor-pointer"
+          className="bg-cyan-700 hover:bg-cyan-800 text-white flex items-center cursor-pointer"
         >
           <Send className="h-4 w-4" />
         </Button>

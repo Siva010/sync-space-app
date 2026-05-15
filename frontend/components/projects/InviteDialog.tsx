@@ -443,7 +443,7 @@ export default function InviteDialog({
             <Button
               type="submit"
               disabled={isInviting}
-              className="w-full sm:w-auto bg-violet-700 hover:bg-violet-800 text-white"
+              className="w-full sm:w-auto bg-cyan-700 hover:bg-cyan-800 text-white"
             >
               {isInviting ? (
                 <>

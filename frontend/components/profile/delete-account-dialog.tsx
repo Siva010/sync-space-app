@@ -368,7 +368,7 @@ export function DeleteAccountDialog({
                     value={verificationCode}
                     onChange={(e) => setVerificationCode(e.target.value)}
                     placeholder="6-digit code"
-                    className="flex-1 border-input focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all"
+                    className="flex-1 border-input focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all"
                     maxLength={6}
                   />
                   <Button
@@ -388,7 +388,7 @@ export function DeleteAccountDialog({
                   onClick={requestVerificationCode}
                   type="button"
                   variant="link"
-                  className="h-auto p-0 text-xs text-muted-foreground hover:text-violet-700 dark:hover:text-violet-400"
+                  className="h-auto p-0 text-xs text-muted-foreground hover:text-cyan-700 dark:hover:text-cyan-400"
                   disabled={isRequestingCode}
                 >
                   {isRequestingCode ? "Sending..." : "Resend code"}

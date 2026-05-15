@@ -49,7 +49,7 @@ export function CustomToggle({
         relative inline-flex ${button} flex-shrink-0 cursor-pointer rounded-full 
         border-2 border-transparent transition-colors duration-200 ease-in-out 
         focus:outline-none
-        ${checked ? "bg-violet-600" : "bg-gray-200"} 
+        ${checked ? "bg-cyan-600" : "bg-gray-200"} 
         ${disabled ? "opacity-50 cursor-not-allowed" : ""}
       `}
     >

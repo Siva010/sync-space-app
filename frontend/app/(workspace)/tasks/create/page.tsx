@@ -68,7 +68,7 @@ function TaskPage() {
       <div className="flex flex-col min-h-[80vh]">
         <div className="flex-grow flex items-center justify-center">
           <div className="text-center space-y-4">
-            <Loader2 className="h-12 w-12 animate-spin text-violet-600 mx-auto" />
+            <Loader2 className="h-12 w-12 animate-spin text-cyan-600 mx-auto" />
           </div>
         </div>
       </div>
@@ -91,7 +91,7 @@ function TaskPage() {
           <div className="flex items-center space-x-2">
             <Badge
               variant="outline"
-              className="px-3 py-1 border-violet-200 bg-violet-50 text-violet-700 dark:border-violet-800 dark:bg-violet-900/30 dark:text-violet-400"
+              className="px-3 py-1 border-cyan-200 bg-cyan-50 text-cyan-700 dark:border-cyan-800 dark:bg-cyan-900/30 dark:text-cyan-400"
             >
               <Clipboard className="h-3.5 w-3.5 mr-1.5" />
               New Task
@@ -117,7 +117,7 @@ function LoadingTaskCreate() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow">
         <div className="flex items-center justify-center min-h-[calc(100vh-200px)]">
-          <Loader2 className="h-8 w-8 animate-spin text-violet-700" />
+          <Loader2 className="h-8 w-8 animate-spin text-cyan-700" />
         </div>
       </main>
     </div>

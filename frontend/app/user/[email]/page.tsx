@@ -95,7 +95,7 @@ function UserProfileContent() {
       <div className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow flex items-center justify-center">
-          <Loader2 className="h-8 w-8 animate-spin text-violet-700" />
+          <Loader2 className="h-8 w-8 animate-spin text-cyan-700" />
         </main>
         <Footer />
       </div>
@@ -137,7 +137,7 @@ function UserProfileContent() {
                   alt={userProfile.name || "User"}
                   className="object-cover"
                 />
-                <AvatarFallback className="bg-gradient-to-br from-violet-500 to-indigo-700 text-white text-2xl">
+                <AvatarFallback className="bg-gradient-to-br from-cyan-500 to-indigo-700 text-white text-2xl">
                   {getInitials(userProfile.name)}
                 </AvatarFallback>
               </Avatar>
@@ -222,7 +222,7 @@ function UserProfileContent() {
                       <div className="border rounded-lg p-4 hover:bg-muted/30 transition-colors cursor-pointer group">
                         <div className="flex items-start justify-between">
                           <div className="flex-1">
-                            <h3 className="font-medium group-hover:text-violet-700 dark:group-hover:text-violet-400 transition-colors">
+                            <h3 className="font-medium group-hover:text-cyan-700 dark:group-hover:text-cyan-400 transition-colors">
                               {project.name}
                             </h3>
                             {project.description && (
@@ -311,7 +311,7 @@ export default function UserProfilePage() {
         <div className="flex flex-col min-h-screen">
           <Header />
           <main className="flex-grow flex items-center justify-center py-20">
-            <Loader2 className="h-8 w-8 animate-spin text-violet-700" />
+            <Loader2 className="h-8 w-8 animate-spin text-cyan-700" />
           </main>
           <Footer />
         </div>

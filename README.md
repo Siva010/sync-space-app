@@ -12,7 +12,6 @@
 ![SMTP](https://img.shields.io/badge/SMTP-FF6600?logo=minutemailer&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 
-[![SyncSpace Logo](Photos/SyncSpace.gif)](https://syncspace-app.vercel.app/)
 
 ## Table of Contents
 
@@ -69,7 +68,6 @@ SyncSpace is a sophisticated project collaboration platform designed to streamli
 - **Kanban Board View**: Drag-and-drop task management with visual workflow stages
 - **Responsive Design**: Fully mobile-responsive interface for collaboration on any device
 
-![SyncSpace Logo](Photos/Messages.png)
 
 ## Subscription & Payment System
 
@@ -86,7 +84,6 @@ SyncSpace is a sophisticated project collaboration platform designed to streamli
 | **Pro**        | 100       | 15           | 10GB    | $29/month |
 | **Enterprise** | Unlimited | Unlimited    | 100GB   | $79/month |
 
-![SyncSpace Logo](Photos/Subscription.png)
 
 ### Auto-Accept Team Invitation
 
@@ -166,7 +163,6 @@ SyncSpace is built on a modern, microservices-oriented architecture:
 
 The application uses a RESTful API for most operations, with Socket.io for real-time features like messaging and status updates.
 
-![SyncSpace Logo](Photos/File-System.png)
 
 ## Subscription System Architecture
 
@@ -342,7 +338,6 @@ For local development without Docker:
    npm run dev
    ```
 
-![SyncSpace Logo](Photos/Dashboard.png)
 
 
 

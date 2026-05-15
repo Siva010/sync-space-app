@@ -175,7 +175,7 @@ export default function ProjectsPage() {
   if (status === "loading") {
     return (
       <div className="flex h-[calc(100vh-2rem)] items-center justify-center">
-        <Loader2 className="h-8 w-8 animate-spin text-violet-700" />
+        <Loader2 className="h-8 w-8 animate-spin text-cyan-700" />
       </div>
     );
   }
@@ -183,7 +183,7 @@ export default function ProjectsPage() {
   if (isLoading && isInitialRender) {
     return (
       <div className="flex h-[calc(100vh-2rem)] items-center justify-center">
-        <Loader2 className="h-8 w-8 animate-spin text-violet-700" />
+        <Loader2 className="h-8 w-8 animate-spin text-cyan-700" />
       </div>
     );
   }
@@ -203,7 +203,7 @@ export default function ProjectsPage() {
 
         <Button
           asChild
-          className="bg-violet-700 hover:bg-violet-800 dark:bg-violet-700 dark:hover:bg-violet-800 text-white"
+          className="bg-cyan-700 hover:bg-cyan-800 dark:bg-cyan-700 dark:hover:bg-cyan-800 text-white"
           disabled={isLoading}
         >
           <Link href="/projects/create">
@@ -632,7 +632,7 @@ export default function ProjectsPage() {
             </p>
             <Button
               asChild
-              className="bg-violet-700 hover:bg-violet-800 dark:bg-violet-700 dark:hover:bg-violet-800 text-white"
+              className="bg-cyan-700 hover:bg-cyan-800 dark:bg-cyan-700 dark:hover:bg-cyan-800 text-white"
             >
               <Link href="/projects/create">
                 <PlusCircle className="h-4 w-4 mr-2" />
@@ -653,7 +653,7 @@ export default function ProjectsPage() {
             <Button
               variant="outline"
               onClick={clearFilters}
-              className="border-violet-200 text-violet-700 hover:bg-violet-50 hover:text-violet-800"
+              className="border-cyan-200 text-cyan-700 hover:bg-cyan-50 hover:text-cyan-800"
             >
               Clear Filters
             </Button>
@@ -679,7 +679,7 @@ export default function ProjectsPage() {
 
       {isLoading && !isInitialRender && (
         <div className="fixed bottom-4 right-4 bg-background shadow-lg rounded-full p-2 z-50 border">
-          <Loader2 className="h-6 w-6 animate-spin text-violet-700" />
+          <Loader2 className="h-6 w-6 animate-spin text-cyan-700" />
         </div>
       )}
     </div>

@@ -157,7 +157,7 @@ const Pricing = React.forwardRef<HTMLDivElement, PricingProps>(
         popular: false,
         cta: status === "authenticated" ? "Go to Dashboard" : "Get Started",
         color:
-          "bg-card border-border hover:border-violet-200 dark:hover:border-violet-400",
+          "bg-card border-border hover:border-cyan-200 dark:hover:border-cyan-400",
         buttonVariant: "outline",
         last: false,
         priceId: null, // Free plan
@@ -180,7 +180,7 @@ const Pricing = React.forwardRef<HTMLDivElement, PricingProps>(
         popular: true,
         cta: "Try Pro Free",
         color:
-          "bg-gradient-to-b from-violet-50 to-purple-50 dark:from-violet-950/30 dark:to-purple-950/20 border-violet-200 dark:border-violet-400",
+          "bg-gradient-to-b from-cyan-50 to-blue-50 dark:from-cyan-950/30 dark:to-blue-950/20 border-cyan-200 dark:border-cyan-400",
         buttonVariant: "default",
         last: false,
         priceId: "price_1S4DQICKziAtH8BYuY73xOLJ", // Pro plan price ID ($29)
@@ -203,7 +203,7 @@ const Pricing = React.forwardRef<HTMLDivElement, PricingProps>(
         popular: false,
         cta: "Try Enterprise Free",
         color:
-          "bg-card border-border hover:border-violet-200 dark:hover:border-violet-400",
+          "bg-card border-border hover:border-cyan-200 dark:hover:border-cyan-400",
         buttonVariant: "outline",
         last: true,
         priceId: "price_1S4DQTCKziAtH8BYeZh1NhJo", // Enterprise plan price ID ($79)
@@ -303,14 +303,14 @@ const Pricing = React.forwardRef<HTMLDivElement, PricingProps>(
             transition={{ duration: 0.6 }}
           >
             <motion.div
-              className="inline-flex items-center rounded-full bg-violet-100 dark:bg-violet-900/30 px-4 py-1.5 mb-4"
+              className="inline-flex items-center rounded-full bg-cyan-100 dark:bg-cyan-900/30 px-4 py-1.5 mb-4"
               initial={{ opacity: 0, y: 20 }}
               animate={
                 pricingInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
               }
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <span className="text-violet-900 dark:text-violet-300 text-sm font-medium flex items-center">
+              <span className="text-cyan-900 dark:text-cyan-300 text-sm font-medium flex items-center">
                 <Zap className="h-4 w-4 mr-1.5" /> Pricing
               </span>
             </motion.div>
@@ -351,7 +351,7 @@ const Pricing = React.forwardRef<HTMLDivElement, PricingProps>(
                   plan.color
                 } p-8 shadow-sm transition-all duration-300 flex flex-col h-full border ${
                   plan.popular
-                    ? "ring-2 ring-violet-500 dark:ring-violet-400"
+                    ? "ring-2 ring-cyan-500 dark:ring-cyan-400"
                     : ""
                 }
                     ${plan.popular ? "z-10 bg-accent" : "z-0"}
@@ -359,7 +359,7 @@ const Pricing = React.forwardRef<HTMLDivElement, PricingProps>(
               >
                 {plan.popular && (
                   <div className="absolute top-0 right-6 transform -translate-y-1/2">
-                    <div className="inline-flex bg-violet-600 dark:bg-violet-500 text-white text-xs font-medium px-3 py-1 rounded-full">
+                    <div className="inline-flex bg-cyan-600 dark:bg-cyan-500 text-white text-xs font-medium px-3 py-1 rounded-full">
                       Most Popular
                     </div>
                   </div>
@@ -387,7 +387,7 @@ const Pricing = React.forwardRef<HTMLDivElement, PricingProps>(
                     className={`mt-4 flex items-baseline text-foreground ${
                       plan.popular
                         ? ""
-                        : "group-hover:text-violet-700 dark:group-hover:text-violet-400 transition-colors duration-200"
+                        : "group-hover:text-cyan-700 dark:group-hover:text-cyan-400 transition-colors duration-200"
                     }`}
                   >
                     <span className="text-4xl font-extrabold tracking-tight ">
@@ -436,7 +436,7 @@ const Pricing = React.forwardRef<HTMLDivElement, PricingProps>(
                     }
                     className={`w-full ${
                       plan.popular && !(plan.planStatus?.isCurrent && plan.planStatus.isActive) && !isDowngrade(plan)
-                        ? "bg-violet-700 hover:bg-violet-800 text-white"
+                        ? "bg-cyan-700 hover:bg-cyan-800 text-white"
                         : plan.planStatus?.isCurrent && plan.planStatus.isActive
                         ? "border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400"
                         : isDowngrade(plan)

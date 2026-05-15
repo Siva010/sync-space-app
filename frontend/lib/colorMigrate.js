@@ -22,22 +22,22 @@ const colorMap = {
   "border-gray-200": "border-border",
   "border-gray-100": "border-border/70",
 
-  "focus:ring-violet-500": "focus:ring-ring",
-  "focus:border-violet-500": "focus:border-ring",
+  "focus:ring-cyan-500": "focus:ring-ring",
+  "focus:border-cyan-500": "focus:border-ring",
 
   "bg-white shadow": "bg-card text-card-foreground shadow-sm dark:shadow-none",
 };
 
 const darkModeAdditions = {
-  "bg-violet-50": "dark:bg-violet-900/20",
-  "bg-violet-100": "dark:bg-violet-900/30",
-  "hover:bg-violet-50": "dark:hover:bg-violet-900/30",
-  "hover:bg-violet-100": "dark:hover:bg-violet-900/40",
-  "text-violet-900": "dark:text-violet-300",
-  "text-violet-700": "dark:text-violet-400",
-  "text-violet-600": "dark:text-violet-400",
-  "border-violet-200": "dark:border-violet-800",
-  "border-violet-100": "dark:border-violet-900/30",
+  "bg-cyan-50": "dark:bg-cyan-900/20",
+  "bg-cyan-100": "dark:bg-cyan-900/30",
+  "hover:bg-cyan-50": "dark:hover:bg-cyan-900/30",
+  "hover:bg-cyan-100": "dark:hover:bg-cyan-900/40",
+  "text-cyan-900": "dark:text-cyan-300",
+  "text-cyan-700": "dark:text-cyan-400",
+  "text-cyan-600": "dark:text-cyan-400",
+  "border-cyan-200": "dark:border-cyan-800",
+  "border-cyan-100": "dark:border-cyan-900/30",
 
   "bg-red-50": "dark:bg-red-900/20",
   "bg-green-50": "dark:bg-green-900/20",

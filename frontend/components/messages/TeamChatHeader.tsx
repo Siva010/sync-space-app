@@ -45,14 +45,14 @@ const TeamChatHeader: React.FC<TeamChatHeaderProps> = ({
         </Button>
       )}
       <Avatar
-        className="h-10 w-10 bg-violet-100 dark:bg-violet-900/30 cursor-pointer"
+        className="h-10 w-10 bg-cyan-100 dark:bg-cyan-900/30 cursor-pointer"
         onClick={() => {
           if (project.id) {
             window.location.href = `/projects/${project.id}`;
           }
         }}
       >
-        <AvatarFallback className="bg-gradient-to-br from-violet-500 to-indigo-700 text-white">
+        <AvatarFallback className="bg-gradient-to-br from-cyan-500 to-indigo-700 text-white">
           {getProjectInitials(project.name)}
         </AvatarFallback>
       </Avatar>

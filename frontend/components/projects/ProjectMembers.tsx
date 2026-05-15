@@ -195,7 +195,7 @@ export default function ProjectMembers({
       <CardContent>
         {isLoading ? (
           <div className="flex justify-center items-center py-6">
-            <Loader2 className="h-6 w-6 animate-spin text-violet-700" />
+            <Loader2 className="h-6 w-6 animate-spin text-cyan-700" />
           </div>
         ) : (
           <div className="space-y-4">
@@ -217,7 +217,7 @@ export default function ProjectMembers({
                         src={member.user?.image || ""}
                         alt={member.user?.name || "Unknown user"}
                       />
-                      <AvatarFallback className="bg-violet-100 text-violet-700 text-xs">
+                      <AvatarFallback className="bg-cyan-100 text-cyan-700 text-xs">
                         {getInitials(member.user?.name)}
                       </AvatarFallback>
                     </Avatar>
@@ -349,7 +349,7 @@ export default function ProjectMembers({
             <AlertDialogAction
               onClick={confirmRoleChange}
               disabled={isUpdatingRole}
-              className="bg-violet-700 hover:bg-violet-800 text-white"
+              className="bg-cyan-700 hover:bg-cyan-800 text-white"
             >
               {isUpdatingRole ? (
                 <>

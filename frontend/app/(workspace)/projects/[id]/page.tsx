@@ -95,7 +95,7 @@ export default function ProjectDetailPage() {
     return (
       <div className="flex flex-col min-h-screen">
         <div className="flex-grow flex items-center justify-center">
-          <Loader2 className="h-8 w-8 animate-spin text-violet-700" />
+          <Loader2 className="h-8 w-8 animate-spin text-cyan-700" />
         </div>
       </div>
     );
@@ -106,7 +106,7 @@ export default function ProjectDetailPage() {
     return (
       <div className="flex flex-col min-h-screen">
         <div className="flex-grow flex items-center justify-center">
-          <Loader2 className="h-8 w-8 animate-spin text-violet-700" />
+          <Loader2 className="h-8 w-8 animate-spin text-cyan-700" />
         </div>
       </div>
     );
@@ -164,7 +164,7 @@ export default function ProjectDetailPage() {
             <TabsContent value="tasks" className="mt-6">
               {isTasksLoading ? (
                 <div className="flex justify-center items-center py-12">
-                  <Loader2 className="h-8 w-8 animate-spin text-violet-700 mr-2" />
+                  <Loader2 className="h-8 w-8 animate-spin text-cyan-700 mr-2" />
                   <span>Loading tasks...</span>
                 </div>
               ) : (

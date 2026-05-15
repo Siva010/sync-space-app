@@ -33,7 +33,7 @@ export default function WorkspaceLayout({
   if (status === "loading") {
     return (
       <div className="flex h-screen items-center justify-center">
-        <Loader2 className="h-8 w-8 animate-spin text-violet-700" />
+        <Loader2 className="h-8 w-8 animate-spin text-cyan-700" />
       </div>
     );
   }

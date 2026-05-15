@@ -92,8 +92,8 @@ export const themeColors = {
   borderGray300: "border-border",
   borderGray200: "border-border",
   // Accent colors
-  violetPrimary: "bg-violet-600 dark:bg-violet-700",
-  violetSecondary: "bg-violet-100 dark:bg-violet-900/30",
+  cyanPrimary: "bg-cyan-600 dark:bg-cyan-700",
+  cyanSecondary: "bg-cyan-100 dark:bg-cyan-900/30",
   // Special combinations
   card: "bg-card text-card-foreground border-border",
   input: "bg-background border-input focus:ring-ring",

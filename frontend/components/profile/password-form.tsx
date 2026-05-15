@@ -140,7 +140,7 @@ export function PasswordForm({
 
       <Button
         type="submit"
-        className="w-fit mt-2 bg-violet-700 hover:bg-violet-800 dark:bg-violet-600 dark:hover:bg-violet-700 text-white"
+        className="w-fit mt-2 bg-cyan-700 hover:bg-cyan-800 dark:bg-cyan-600 dark:hover:bg-cyan-700 text-white"
         disabled={isUpdatingPassword}
       >
         {isUpdatingPassword ? (

@@ -861,7 +861,7 @@ export default function FileExplorer({
               <Button
                 onClick={handleSubmitFiles}
                 disabled={isUploading || filesToUpload.length === 0}
-                className="bg-violet-600 hover:bg-violet-700 text-white cursor-pointer"
+                className="bg-cyan-600 hover:bg-cyan-700 text-white cursor-pointer"
               >
                 {isUploading ? (
                   <>

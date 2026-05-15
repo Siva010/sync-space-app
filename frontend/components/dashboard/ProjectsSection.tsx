@@ -34,7 +34,7 @@ export default function ProjectsSection({ projects }: ProjectsSectionProps) {
         <Button
           asChild
           variant="ghost"
-          className="text-sm text-muted-foreground hover:text-violet-700 dark:hover:text-violet-400"
+          className="text-sm text-muted-foreground hover:text-cyan-700 dark:hover:text-cyan-400"
           size="sm"
         >
           <Link href="/projects" className="flex items-center">
@@ -55,7 +55,7 @@ export default function ProjectsSection({ projects }: ProjectsSectionProps) {
             </p>
             <Button
               asChild
-              className="bg-violet-700 hover:bg-violet-800 dark:bg-violet-700 dark:hover:bg-violet-800 text-white"
+              className="bg-cyan-700 hover:bg-cyan-800 dark:bg-cyan-700 dark:hover:bg-cyan-800 text-white"
             >
               <Link href="/projects/create">Create New Project</Link>
             </Button>

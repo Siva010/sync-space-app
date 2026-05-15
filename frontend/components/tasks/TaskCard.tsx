@@ -97,7 +97,7 @@ export default function TaskCard({ task, currentUserId }: TaskCardProps) {
         <div className="flex items-start justify-between pb-2">
           <button
             onClick={handleProjectClick}
-            className="text-md text-violet-600 dark:text-violet-400 hover:underline inline-flex items-center bg-transparent border-0 p-0 cursor-pointer"
+            className="text-md text-cyan-600 dark:text-cyan-400 hover:underline inline-flex items-center bg-transparent border-0 p-0 cursor-pointer"
           >
             <FolderKanban className="h-4 w-4 mr-1" />
             {task.project.name}
@@ -153,7 +153,7 @@ export default function TaskCard({ task, currentUserId }: TaskCardProps) {
                           );
                         }}
                       />
-                      <AvatarFallback className="bg-violet-100 text-violet-700 text-xs">
+                      <AvatarFallback className="bg-cyan-100 text-cyan-700 text-xs">
                         {getInitials(task.assignee.name)}
                       </AvatarFallback>
                     </Avatar>

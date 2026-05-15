@@ -27,8 +27,8 @@ const TaskStats: React.FC<TaskStatsGridProps> = ({
             </p>
             <p className="text-2xl font-bold">{getTaskCount(activeTab)}</p>
           </div>
-          <div className="h-10 w-10 rounded-full bg-violet-100 dark:bg-violet-900/30 flex items-center justify-center">
-            <PlusCircle className="h-5 w-5 text-violet-600 dark:text-violet-400" />
+          <div className="h-10 w-10 rounded-full bg-cyan-100 dark:bg-cyan-900/30 flex items-center justify-center">
+            <PlusCircle className="h-5 w-5 text-cyan-600 dark:text-cyan-400" />
           </div>
         </CardContent>
       </Card>

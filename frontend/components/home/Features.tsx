@@ -26,7 +26,7 @@ const Features = React.forwardRef<HTMLDivElement, FeaturesProps>(
         description:
           "Create and organize projects with workflows and tasks to match your team's process.",
         size: "large",
-        accent: "violet",
+        accent: "cyan",
       },
       {
         icon: <Users />,
@@ -50,7 +50,7 @@ const Features = React.forwardRef<HTMLDivElement, FeaturesProps>(
         description:
           "Control what project members can do with three-tier permission levels.",
         size: "small",
-        accent: "violet",
+        accent: "cyan",
       },
       {
         icon: <BarChart />,
@@ -58,7 +58,7 @@ const Features = React.forwardRef<HTMLDivElement, FeaturesProps>(
         description:
           "Monitor project progress with visual dashboards and status updates.",
         size: "medium",
-        accent: "violet",
+        accent: "cyan",
       },
       {
         icon: <MessageSquare />,
@@ -88,11 +88,11 @@ const Features = React.forwardRef<HTMLDivElement, FeaturesProps>(
 
     const getAccentColor = (accent: string) => {
       const colors = {
-        violet: {
-          bg: "bg-violet-100 dark:bg-violet-900/30",
-          text: "text-violet-700 dark:text-violet-400 dark:group-hover:text-white",
-          hover: "group-hover:bg-violet-700 dark:group-hover:bg-violet-800/40",
-          gradient: "from-violet-500/20 to-transparent",
+        cyan: {
+          bg: "bg-cyan-100 dark:bg-cyan-900/30",
+          text: "text-cyan-700 dark:text-cyan-400 dark:group-hover:text-white",
+          hover: "group-hover:bg-cyan-700 dark:group-hover:bg-cyan-800/40",
+          gradient: "from-cyan-500/20 to-transparent",
           patternColor: "rgba(139, 92, 246, 0.4)",
           patternColorDark: "rgba(139, 92, 246, 0.6)",
           beamColor: "rgba(139, 92, 246, 0.8)",
@@ -117,7 +117,7 @@ const Features = React.forwardRef<HTMLDivElement, FeaturesProps>(
           beamColor: "rgba(16, 185, 129, 0.8)",
         },
       };
-      return colors[accent as keyof typeof colors] || colors.violet;
+      return colors[accent as keyof typeof colors] || colors.cyan;
     };
 
     return (
@@ -131,8 +131,8 @@ const Features = React.forwardRef<HTMLDivElement, FeaturesProps>(
             transition={{ duration: 0.8 }}
             className="text-center mb-10"
           >
-            <div className="inline-flex items-center rounded-full bg-violet-100 dark:bg-violet-900/30 px-4 py-1.5 mb-4">
-              <span className="text-violet-900 dark:text-violet-300 text-sm font-medium flex items-center">
+            <div className="inline-flex items-center rounded-full bg-cyan-100 dark:bg-cyan-900/30 px-4 py-1.5 mb-4">
+              <span className="text-cyan-900 dark:text-cyan-300 text-sm font-medium flex items-center">
                 <Zap className="h-4 w-4 mr-1.5" /> Features
               </span>
             </div>

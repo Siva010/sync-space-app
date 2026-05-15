@@ -167,10 +167,10 @@ export default function WorkspaceSidebar() {
             <div className="flex flex-col h-full">
               <div className="border-b border-border/40 p-4 flex items-center justify-between">
                 <Link href="/" className="flex items-center gap-2">
-                  <div className="h-8 w-8 rounded-full bg-violet-700 flex items-center justify-center">
+                  <div className="h-8 w-8 rounded-full bg-cyan-700 flex items-center justify-center">
                     <Zap className="h-4 w-4 text-white" />
                   </div>
-                  <span className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-violet-700 to-purple-600">
+                  <span className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-700 to-blue-600">
                     SyncSpace
                   </span>
                 </Link>
@@ -190,7 +190,7 @@ export default function WorkspaceSidebar() {
                       className={`w-full justify-start ${
                         pathname === link.href ||
                         pathname?.startsWith(`${link.href}/`)
-                          ? "bg-violet-700 hover:bg-violet-800 text-white"
+                          ? "bg-cyan-700 hover:bg-cyan-800 text-white"
                           : ""
                       }`}
                       asChild
@@ -259,7 +259,7 @@ export default function WorkspaceSidebar() {
                           alt={userName}
                           className="object-cover"
                         />
-                        <AvatarFallback className="bg-gradient-to-br from-violet-500 to-indigo-700 text-white text-xs">
+                        <AvatarFallback className="bg-gradient-to-br from-cyan-500 to-indigo-700 text-white text-xs">
                           {getInitials(userName)}
                         </AvatarFallback>
                       </Avatar>
@@ -318,10 +318,10 @@ export default function WorkspaceSidebar() {
           </SheetContent>
         </Sheet>
         <Link href="/" className="flex items-center gap-2">
-          <div className="h-8 w-8 rounded-full bg-violet-700 flex items-center justify-center">
+          <div className="h-8 w-8 rounded-full bg-cyan-700 flex items-center justify-center">
             <Zap className="h-4 w-4 text-white" />
           </div>
-          <span className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-violet-700 to-purple-600">
+          <span className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-700 to-blue-600">
             SyncSpace
           </span>
         </Link>
@@ -341,7 +341,7 @@ export default function WorkspaceSidebar() {
                     alt={userName}
                     className="object-cover"
                   />
-                  <AvatarFallback className="bg-gradient-to-br from-violet-500 to-indigo-700 text-white text-xs">
+                  <AvatarFallback className="bg-gradient-to-br from-cyan-500 to-indigo-700 text-white text-xs">
                     {getInitials(userName)}
                   </AvatarFallback>
                 </Avatar>
@@ -396,7 +396,7 @@ export default function WorkspaceSidebar() {
       >
         <Link href="/" className="flex items-center gap-2">
           <motion.div
-            className="h-8 w-8 rounded-full bg-violet-700 flex items-center justify-center"
+            className="h-8 w-8 rounded-full bg-cyan-700 flex items-center justify-center"
             whileHover={{ scale: 1.05, rotate: 360 }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
             whileTap={{ scale: 0.95 }}
@@ -411,12 +411,12 @@ export default function WorkspaceSidebar() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth={2}
-                d="M13 10V3L4 14h7v7l9-11h-7z"
+                d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
               />
             </svg>
           </motion.div>
 
-          <span className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-violet-700 to-purple-600 transition-opacity duration-200 group-data-[collapsible=icon]:opacity-0 group-data-[collapsible=icon]:hidden">
+          <span className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-700 to-blue-600 transition-opacity duration-200 group-data-[collapsible=icon]:opacity-0 group-data-[collapsible=icon]:hidden">
             SyncSpace
           </span>
         </Link>
@@ -538,7 +538,7 @@ export default function WorkspaceSidebar() {
                     alt={userName}
                     className="object-cover"
                   />
-                  <AvatarFallback className="bg-gradient-to-br from-violet-500 to-indigo-700 text-white text-xs">
+                  <AvatarFallback className="bg-gradient-to-br from-cyan-500 to-indigo-700 text-white text-xs">
                     {getInitials(userName)}
                   </AvatarFallback>
                 </Avatar>

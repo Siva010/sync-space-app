@@ -258,8 +258,8 @@ const ConversationList: React.FC<ConversationListProps> = ({
                 <div className="relative">
                   {isTeamChat ? (
                     // Team Chat Avatar
-                    <Avatar className="bg-violet-100 dark:bg-violet-900/30">
-                      <AvatarFallback className="bg-gradient-to-br from-violet-500 to-indigo-700 text-white">
+                    <Avatar className="bg-cyan-100 dark:bg-cyan-900/30">
+                      <AvatarFallback className="bg-gradient-to-br from-cyan-500 to-indigo-700 text-white">
                         {getInitials(conversation.name ?? null)}
                       </AvatarFallback>
                     </Avatar>

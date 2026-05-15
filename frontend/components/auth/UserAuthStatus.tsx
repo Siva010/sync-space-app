@@ -92,7 +92,7 @@ export default function UserAuthStatus({
   const AvatarComponent = () => (
     <Avatar className="h-10 w-10">
       <AvatarImage src={userImage} alt={userName} className="object-cover" />
-      <AvatarFallback className="bg-gradient-to-br from-violet-500 to-indigo-700 text-white text-sm">
+      <AvatarFallback className="bg-gradient-to-br from-cyan-500 to-indigo-700 text-white text-sm">
         {getInitials(userName)}
       </AvatarFallback>
     </Avatar>
@@ -122,7 +122,7 @@ export default function UserAuthStatus({
                 <Link
                   href="/profile"
                   onClick={handleLinkClick}
-                  className="text-sm font-medium hover:text-violet-700 transition-colors"
+                  className="text-sm font-medium hover:text-cyan-700 transition-colors"
                 >
                   {userName}
                 </Link>
@@ -137,7 +137,7 @@ export default function UserAuthStatus({
           <div className="mt-3 space-y-1 px-2">
             <Link
               href="/profile"
-              className="block px-3 py-2 rounded-md text-base font-medium text-foreground/70 hover:bg-violet-50 hover:text-violet-900"
+              className="block px-3 py-2 rounded-md text-base font-medium text-foreground/70 hover:bg-cyan-50 hover:text-cyan-900"
               onClick={handleLinkClick}
             >
               Profile
@@ -165,7 +165,7 @@ export default function UserAuthStatus({
               <Link
                 href="/profile"
                 onClick={handleLinkClick}
-                className="text-sm font-medium hover:text-violet-700 transition-colors"
+                className="text-sm font-medium hover:text-cyan-700 transition-colors"
               >
                 {userName}
               </Link>

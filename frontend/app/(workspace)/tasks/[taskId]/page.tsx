@@ -413,7 +413,7 @@ export default function TaskDetailsPage() {
   if (status === "loading" || isLoading) {
     return (
       <div className="flex items-center justify-center h-[60vh]">
-        <Loader2 className="h-8 w-8 animate-spin text-violet-700" />
+        <Loader2 className="h-8 w-8 animate-spin text-cyan-700" />
       </div>
     );
   }
@@ -480,7 +480,7 @@ export default function TaskDetailsPage() {
                   value={editedTask.title}
                   onChange={(e) => handleEditField("title", e.target.value)}
                   className={cn(
-                    "text-xl font-bold border-violet-400 focus-visible:ring-violet-400",
+                    "text-xl font-bold border-cyan-400 focus-visible:ring-cyan-400",
                     validationErrors.title && "border-red-500"
                   )}
                 />
@@ -496,7 +496,7 @@ export default function TaskDetailsPage() {
             <div className="flex items-center gap-2 text-sm opacity-80">
               <Link
                 href={`/projects/${project?.id}`}
-                className="hover:text-violet-800  dark:hover:text-violet-300  hover:underline"
+                className="hover:text-cyan-800  dark:hover:text-cyan-300  hover:underline"
               >
                 {project.name}
               </Link>
@@ -574,7 +574,7 @@ export default function TaskDetailsPage() {
               <Button
                 variant="default"
                 size="sm"
-                className="flex items-center bg-violet-600 hover:bg-violet-700 dark:bg-violet-800 dark:hover:bg-violet-900 text-white"
+                className="flex items-center bg-cyan-600 hover:bg-cyan-700 dark:bg-cyan-800 dark:hover:bg-cyan-900 text-white"
                 onClick={handleSaveChanges}
                 disabled={isSaving}
               >
@@ -854,7 +854,7 @@ export default function TaskDetailsPage() {
                               src={task.assignee.image || ""}
                               alt={task.assignee.name}
                             />
-                            <AvatarFallback className="bg-violet-100 text-violet-700 text-xs">
+                            <AvatarFallback className="bg-cyan-100 text-cyan-700 text-xs">
                               {getInitials(task.assignee.name)}
                             </AvatarFallback>
                           </Avatar>
@@ -881,7 +881,7 @@ export default function TaskDetailsPage() {
                         src={task.creator.image || ""}
                         alt={task.creator.name}
                       />
-                      <AvatarFallback className="bg-violet-100 text-violet-700 text-xs">
+                      <AvatarFallback className="bg-cyan-100 text-cyan-700 text-xs">
                         {getInitials(task.creator.name)}
                       </AvatarFallback>
                     </Avatar>

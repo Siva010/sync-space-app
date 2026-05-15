@@ -101,7 +101,7 @@ export default function DeadlinesList({
 
     if (type === "project") {
       return (
-        <FolderKanban className="h-4 w-4 text-violet-600 dark:text-violet-400" />
+        <FolderKanban className="h-4 w-4 text-cyan-600 dark:text-cyan-400" />
       );
     }
 
@@ -227,7 +227,7 @@ export default function DeadlinesList({
                                 <div className="text-xs text-muted-foreground mt-1">
                                   Project:{" "}
                                   <Link
-                                    className="text-violet-600 dark:text-violet-400 hover:underline"
+                                    className="text-cyan-600 dark:text-cyan-400 hover:underline"
                                     href={`/projects/${deadline.project.id}`}
                                   >
                                     {deadline.project.name}
@@ -259,7 +259,7 @@ export default function DeadlinesList({
                                 <Button
                                   variant="ghost"
                                   size="sm"
-                                  className="h-7 px-2 text-xs text-violet-700 dark:text-violet-400 ml-auto"
+                                  className="h-7 px-2 text-xs text-cyan-700 dark:text-cyan-400 ml-auto"
                                   asChild
                                 >
                                   <Link
@@ -320,7 +320,7 @@ export default function DeadlinesList({
                                 <div className="text-sm text-muted-foreground mt-1">
                                   Project:{" "}
                                   <Link
-                                    className="text-sm mt-1 text-violet-600 dark:text-violet-400 hover:underline"
+                                    className="text-sm mt-1 text-cyan-600 dark:text-cyan-400 hover:underline"
                                     href={`/projects/${deadline.project.id}`}
                                   >
                                     {deadline.project.name}
@@ -352,7 +352,7 @@ export default function DeadlinesList({
                             <Button
                               variant="ghost"
                               size="sm"
-                              className="h-7 px-2 text-xs text-violet-700 dark:text-violet-400"
+                              className="h-7 px-2 text-xs text-cyan-700 dark:text-cyan-400"
                               asChild
                             >
                               <Link

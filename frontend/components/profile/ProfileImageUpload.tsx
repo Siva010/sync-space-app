@@ -209,7 +209,7 @@ export default function ProfileImageUpload({
             className="object-cover"
           />
           <AvatarFallback
-            className={`${fallbackTextSize} bg-gradient-to-br from-violet-500 to-indigo-700 text-white`}
+            className={`${fallbackTextSize} bg-gradient-to-br from-cyan-500 to-indigo-700 text-white`}
           >
             {getInitials(userData?.name || "")}
           </AvatarFallback>
@@ -271,7 +271,7 @@ export default function ProfileImageUpload({
           <div className="space-y-6">
             {isLoading && !isUploading ? (
               <div className="h-40 flex flex-col items-center justify-center space-y-4">
-                <Loader2 className="h-8 w-8 animate-spin text-violet-700" />
+                <Loader2 className="h-8 w-8 animate-spin text-cyan-700" />
                 <p className="text-sm text-center">
                   Saving your profile picture...
                 </p>
@@ -320,7 +320,7 @@ export default function ProfileImageUpload({
                   <img
                     src={previewImage || "/placeholder.svg"}
                     alt=""
-                    className="w-40 h-40 object-cover rounded-full border-4 border-violet-100"
+                    className="w-40 h-40 object-cover rounded-full border-4 border-cyan-100"
                   />
                 </div>
                 <p className="text-sm text-center text-gray-600">
@@ -339,7 +339,7 @@ export default function ProfileImageUpload({
                   <Button
                     onClick={handleConfirmUpload}
                     size="sm"
-                    className="flex items-center bg-violet-600 hover:bg-violet-700 px-4"
+                    className="flex items-center bg-cyan-600 hover:bg-cyan-700 px-4"
                   >
                     <Check className="h-4 w-4 mr-1" />
                     Set as profile picture
@@ -410,7 +410,7 @@ export default function ProfileImageUpload({
                     }}
                     appearance={{
                       button:
-                        "bg-violet-600 hover:bg-violet-700 text-white py-2 px-4 rounded-md font-medium w-full",
+                        "bg-cyan-600 hover:bg-cyan-700 text-white py-2 px-4 rounded-md font-medium w-full",
                       allowedContent: "hidden",
                     }}
                   />

@@ -225,7 +225,7 @@ export default function TasksPage() {
     return (
       <div className="flex h-[calc(100vh-2rem)] items-center justify-center">
         <div className="text-center space-y-4">
-          <Loader2 className="h-12 w-12 animate-spin text-violet-600 mx-auto" />
+          <Loader2 className="h-12 w-12 animate-spin text-cyan-600 mx-auto" />
           <p className="text-muted-foreground">Loading your tasks...</p>
         </div>
       </div>
@@ -277,7 +277,7 @@ export default function TasksPage() {
           {(isAllTasksEmpty || isTabEmpty) && (
             <Button
               asChild
-              className="bg-violet-600 hover:bg-violet-700 dark:bg-violet-600 dark:hover:bg-violet-700 text-white"
+              className="bg-cyan-600 hover:bg-cyan-700 dark:bg-cyan-600 dark:hover:bg-cyan-700 text-white"
             >
               <Link href="/tasks/create">
                 <PlusCircle className="h-4 w-4 mr-2" />
@@ -289,7 +289,7 @@ export default function TasksPage() {
             <Button
               variant="outline"
               onClick={clearFilters}
-              className="border-violet-200 text-violet-700 hover:bg-violet-50 hover:text-violet-800"
+              className="border-cyan-200 text-cyan-700 hover:bg-cyan-50 hover:text-cyan-800"
             >
               Clear Filters
             </Button>
@@ -314,7 +314,7 @@ export default function TasksPage() {
 
         <Button
           asChild
-          className="bg-violet-600 hover:bg-violet-700 dark:bg-violet-600 dark:hover:bg-violet-700 text-white"
+          className="bg-cyan-600 hover:bg-cyan-700 dark:bg-cyan-600 dark:hover:bg-cyan-700 text-white"
         >
           <Link href="/tasks/create">
             <PlusCircle className="h-4 w-4 mr-2" />

@@ -143,7 +143,7 @@ export default function TeamPage() {
   if (status === "loading") {
     return (
       <div className="flex h-[calc(100vh-2rem)] items-center justify-center">
-        <Loader2 className="h-8 w-8 animate-spin text-violet-700" />
+        <Loader2 className="h-8 w-8 animate-spin text-cyan-700" />
       </div>
     );
   }
@@ -151,7 +151,7 @@ export default function TeamPage() {
   if (isLoading && isInitialRender) {
     return (
       <div className="flex h-[calc(100vh-2rem)] items-center justify-center">
-        <Loader2 className="h-8 w-8 animate-spin text-violet-700" />
+        <Loader2 className="h-8 w-8 animate-spin text-cyan-700" />
       </div>
     );
   }
@@ -309,7 +309,7 @@ export default function TeamPage() {
                         src={collaborator.image || ""}
                         alt={collaborator.name || ""}
                       />
-                      <AvatarFallback className="bg-gradient-to-br from-violet-600 to-violet-800 text-white">
+                      <AvatarFallback className="bg-gradient-to-br from-cyan-600 to-cyan-800 text-white">
                         {getInitials(collaborator.name)}
                       </AvatarFallback>
                     </Avatar>
@@ -413,7 +413,7 @@ export default function TeamPage() {
 
       {isLoading && !isInitialRender && (
         <div className="fixed bottom-4 right-4 bg-background shadow-lg rounded-full p-2 z-50 border">
-          <Loader2 className="h-6 w-6 animate-spin text-violet-700" />
+          <Loader2 className="h-6 w-6 animate-spin text-cyan-700" />
         </div>
       )}
     </div>
